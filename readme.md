@@ -1,8 +1,10 @@
 # `Python`
 ## `Notes:`
-- `Gudo van Rossam`
+- `Guido van Rossum` Inventer of `Python` - `Monty Python Flying Circus`.
+- `James Gosling` - Inventer of `Java` - `Oak`
+- `Dennis Ritchie` - Inventer of `C`.
+- `Michael Widenius` - Inventer of `MySql`.
 - `1991` & `Feb`,  Python came in 1989 so it's way befor java 1995.
-- `Monty Python Flying Circus`
 - It is a `case sensitive language`
 - Python can be used for : 
     - `Programming` (for Placements/online contests/DSA)
@@ -121,8 +123,9 @@
 - `Operators:`
 - There are Four types of Operators.
 - `Arithmatic Operator:`
+    - There are 8 Operators in Arithmatic Operators.
     - `Addition:( + )`
-        - Do's Addition.
+        - Do's Addition | Summation.
         - Symbolis: Plus ( + ).
         - Minimum 2 Operands and 1 Operator specifically Operator lies within the 2 Operands.
     - `Subtraction:( - )`
@@ -134,9 +137,9 @@
         - Symbolis: Star | Astaric ( * ).
         - Minimum 2 Operands and 1 Operator specifically Operator lies within the 2 Operands.
     - `Exponantiol:( ** )`
-        - Do's Exponantional.
-        - Symbolis: Two Consicative Star | Astaric ( ** ).
-        - Minimum 2 Operands and 1 Operator specifically Operator lies within the 2 Operands.        
+        - Do's Exponantional make Power of that Integer.
+        - Symbolis: Two Consicative (Continous) Star | Astaric ( ** ).
+        - Minimum 1 Operand integer and 1 power integer Operand specifically Operator lies within the 2 Operands.        
     - `Division:( / )`
         - Do's Division and `return's the Quotient`.
         - Symbolis: Division ( / ) Forword Slash.
@@ -145,14 +148,63 @@
         - Sealing Division. (3.5)-> 4
     - `Floor Division:( // )` 
         - Do's Division and `return's the Quotient Base Integer Value`.
-        - Symbolis: Division ( // ) `Two Consicative Forword Slash`. 
+        - Symbolis: Division ( // ) `Two Consicative (Continous) Forword Slash`. 
         - Minimum 2 Operands and 1 Operator specifically Operator lies within the 2 Operands.
         - Also calles as `Integer Division.`
     - `Modulos:( % )`
         - Do's Division and `Returns Remainder.`
         - Symbolis: Percentage ( % ).
         - Minimum 2 Operands and 1 Operator specifically Operator lies within the 2 Operands.
+    - Assignment Operator:
+        - Store Value in Variable  
 
-- Relational
-- Logical
-- Assignment
+- Assignment Arithmatic Operator:
+    - (+=): Addition and Assign to
+    - (-=): Subtraction and Assign to
+    - (*=): Multiplication and Assign to
+    - (**=): Exponantiol and Assign to
+    - (/=): Divide and Assign to
+    - (//=): Floor and Assign to
+    - (%=): Modulo and Assign to
+
+- Relational Operator:
+    - `Relational operator Returns Boolean DataType`. In the form of True and False.
+    - Grater Than:
+        - Open Angular Bracket 
+
+    - Less Than:
+        - Close Angular Bracket
+
+    - Greater than Equal To: Min
+        - Open Angular Bracket With Assignment Operator
+        - Given value should be Greater than Equal to the Minimum Value.
+
+    - Less Than Equal To: max
+        - Open Angular Bracket With Assignment Operator.
+        - Given value should be less than Equal to the Maximum Value.
+
+    - Equal To:
+        - Two Consicutive ( Continuous ) Assignment Operator called Equal to Operator.
+        - Return's True when both are Similar values.
+
+    - Not Equal To: `Not ( ! )`
+        - Exclametory mark with Assignment Operator
+        - Return's True when both are Different values.   
+
+|Assignment Operator            | Equal to Operator             |
+|-------------------------------|-------------------------------|
+|called Assignment Operator     |called Equal to Operator       |
+|Belongs to Arithmatic Operator |Belong to Relational Operator  |
+|It Stores Value                |Compare Values                 |
+
+- Logical Operator:
+    - Logical and:
+        - Returns True when all Conditions | Inputs are True.
+    - Logical or:
+        - Returns False when all conditions are False. 
+    - Logical not:
+        - Return Negation of Final Output. 
+    - Logical NAND:
+        -  Not & And both makes NAND. called Negation of and
+    - Logical NOR:
+        -  Not & Or both makes NOR. called Negation of or
