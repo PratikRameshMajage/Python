@@ -49,9 +49,16 @@
 - Difference Between `Function` and `Method` -> Block of Code which Executes Targeted Code called Normal Function And Function Use in Class called Method. 
 - `( : )` -> `Identation` -> Dependency Code (Indentation)
 - Portable -> Works on Windows|Mac|Linux, Means platform Independent. 
+- Implicit Conversion : ByDefault Conversion.
+- Explicite Conversion : We did this By our own Hand.
+- Partial Execution means 50% not 100%.
+- All Progrogramming Languages are Scripting Languages. thats why here by default input value is consider as a string. like Python and JavaScript.
+- Input : It allows to Except value on RunTime. (RunTime Is Class)
+- ByDefault Input Value Accepts String.
+- Type Conversion : int(input()) float(input()) complex(input())
 
 - `Compiler:`
-    - It Give's Error.
+    - It Give's an Error.
     - Compile Time Error.
     - Compile at the time of Code Writing.
     - If it fail's in Compilation process it does not show any Output Gives Direct Syntactical Error.
@@ -59,29 +66,30 @@
     - It Throw's Exception.
     - Run Time Exception.
     - Interprit at the time of code Execution.
-    - It may be do the Partial Execution after Compilation and then run time interpritation.
+    - It may be do the Partial Execution after Compilation and then on run time interpritation.
 
 - `Error:`
     - Occours Beacouse of Syntactical Error.
     - At the Time of Compilation.
+    - Compile Time Error 
     - Does not Show any type of Output Just Show the Syntax Error. 
 - `Exception:`
     - Occours Beacouse of Logical Errors. 
     - At the Time of Interpritation.
+    - Run Time Exception
     - It Will Show Partial Output or Exception.
-    - 
 
 - `Comments:` 
     - Use to Explin the code
     - Processor does not Execute the Commented line. It Ignores it. 
     - `Types:`
     - `Single Line Comment:`
-        - It denote by `#`
+        - It denote by `#` - Hash
     - `Multiline Comment:`
-        - It denote by `"""...."""`
+        - It denote by `"""...."""` - Thriple Cottation
 
 
-- `BODMAS:` `Border: (){}[]` `Order: Square Square Root`, ` Divide: / Multiply: *`, `Addition: + Subtraction: -.`
+- `BODMAS:` `Border: (){}[]` `Order: Square & Square Root`, ` Divide: / Multiply: *`, `Addition: + Subtraction: -.`
 
 ## `Addvantages:`
 - `Easy to Learn`
@@ -198,13 +206,74 @@
 |It Stores Value                |Compare Values                 |
 
 - Logical Operator:
+    - Returns Boolean Value.
     - Logical and:
         - Returns True when all Conditions | Inputs are True.
     - Logical or:
         - Returns False when all conditions are False. 
     - Logical not:
-        - Return Negation of Final Output. 
+        - Return Negation of Input value. 
     - Logical NAND:
         -  Not & And both makes NAND. called Negation of and
     - Logical NOR:
         -  Not & Or both makes NOR. called Negation of or
+
+- `Bitwise Operators:`
+    - It Returns Boolean Value on the Console Screen.
+    - `Binary Concersion :` `| 32 | 16 | 8 | 4  | 2 | 1 |`  
+    - `Bin() Function` use to Convert an `Integer value` to `Binary Value` also use to `Identity of a binary value.`
+    - `0b` : is use an identifier for Binary Value `Identity.`  
+    - Addition of `1+1` Bitwise Operator is `10` where 1 is Carry and 0 is Remainder.
+    - `Bitwise ANd ( & ):` 1 1 -> 1
+        - It Returns 1 when all Inputs are 1 else it Returns 0.
+    - `Bitwise OR ( | ):` 0 0 -> 0
+        - It Returns 0 when all Inputs are 0 else it Returns 1.
+    - `Bitwise Ex-OR ( ^ ):` 0 0 -> 0 | 1 1 -> 0 | 0 1 -> 1 | 1 0 -> 1 |
+        - It Called Exclusive-Or.
+        - It Returns 0 when all Inputs are Same.
+        - It Returns 1 when all inputs are Different.
+    - `Bitwise Complimentory Operator ( ~ ):` ~1 -> 0
+        - It Returns Complimentory of Input Value. 
+        - It Add 1 in in given value.  
+        - It also called as 1'st Compliment Operator. (~4)
+        - It gives Negative Value. ( -5 )
+        - Negation of Negation called as 2's Compiment. (~(~4))
+        - It gives Negative Value. ( -6 )
+    - `Bitwise Left Shift Operator ( << ):`
+        - Two Consicutive Close Angular Bracket. 
+        - In this Operator; Value is Increases.
+        - The Vacant Position after shifting are Occupied by 0. 
+        - print(3<<2) 
+    - `Bitwise Right Shift Operator ( >> ):`
+        - Two Consicutive Open Angular Bracket.
+        - In this Operator; Value is Reduce.
+        - The Vacant Position after shifting are Occupied by Nothing.
+        - print(3>>2)  
+```python
+a = 3
+print(a)
+# Output : 3
+print(bin(a)) 
+# Output : 0b11
+print(bin(0b11))
+# Output : 0b11
+```
+
+- `Membership Operators:`
+    - Returns Boolean Value.
+    - `In:`
+        - It returns True when Specified Data is Present in given Value.
+    - `Not In:`
+        - It returns True when Specified Data is Not Present in given Value.
+    
+- `Identity Operators:`
+    - Returns Boolean Value.
+    - Object : Memory Location.
+    - Mutable : List. Similar Data But Here It Represents by Different (Objects) Memory locations.
+    - Immutabe : String, Tuple By Default in Python. When Similar Data is Present in Variable then it Represents by Same (Object) Memory Location.
+    - All Data Types are Classes in Python.
+    - `Is:`
+        - It Returns True when Specified Data Object and given Data Object is Similar.
+    - `Is Not:`
+        - It Returns True when Specified Data Object and given Data Object is Diffreant.
+    - a=b : Explicit Conversion (we did this by our own hand) thats why it is Consider as Partially Immutable means 50% Immutable not 100%.
