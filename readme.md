@@ -54,8 +54,16 @@
 - Partial Execution means 50% not 100%.
 - All Progrogramming Languages are Scripting Languages. thats why here by default input value is consider as a string. like Python and JavaScript.
 - Input : It allows to Except value on RunTime. (RunTime Is Class)
-- ByDefault Input Value Accepts String.
+- ByDefault Input Value Accepts String. Beacouse All programing Languages are Scripting languages.  
 - Type Conversion : int(input()) float(input()) complex(input())
+- Every Data Type in python is Class. we are using there Objects eg:< class int >
+- In Python, everything is an object, and every object is an instance of a class. So, when you use the type() function on an object, it returns the type of the object, which is the class to which it belongs.
+```python
+x = 42
+print(type(x))  # Output: <class 'int'>
+```
+- x = 42: Here, x is assigned the value 42, which is an integer.
+- type(x): This returns the class of the object x. Since 42 is an integer, type(x) will return <class 'int'>, indicating that x is an instance of the int class.
 
 - `Compiler:`
     - It Give's an Error.
