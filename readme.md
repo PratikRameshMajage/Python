@@ -1,4 +1,4 @@
-# `Python`
+# `Python` `V25.01.08`
 ## `Notes:`
 - `Guido van Rossum` Inventer of `Python` - `Monty Python's Flying Circus`. `Python came into Picture just to help those people who don't know how to write a code`
 - `James Gosling` - Inventer of `Java` - `Oak`
@@ -27,9 +27,16 @@
 <!-- - MySql -> YACC -> Yet Only Compile Compile -> C++ and MySql Two Compilers  -->
 - `Robust in Nature` - Memory Management After Code Execution | `Clears Memory After Usage`
 - `Scalable Language` - Compatible to Code with Every Language -> `MySql`, `JavaScript`
+- Install Python:
+    - python --version
+    - pip --version -> python install packages
+- Install jupyter:
+    - jupyter --version
+    - folder -> path -> cmd -> jupyter notebook
+    - browser -> new -> .ipynb -> Interactive Python Notebook -> The notebook provides an environment where you can write and execute code, visualize data, and include `rich text annotations` interactively means `Markdoun annotations`.
 - `Integrated Devlopment Environment:` & `Debugger`
     - Here No Need to Create New File
-        - `Jupiter` -> Open Source
+        - `Jupiter` -> Open Source -> .ipynb -> i : Interactive, py : Python, nb : Notebook.
         - `Python CLI IDLE` (File will Not Be Save) REPL (Read Evaluate Print Loop) Prompt in Windows Shell in Mac
     - Here Need to Create New File
         - `VS Code` -> Microsoft and it is Open Source to Buid Yourself.
@@ -170,7 +177,7 @@ print(type(x))  # Output: <class 'int'>
 - `Boolean:`
     - True & False. 1 & 0.
 
-- `Operators:`
+## `Operators:`
 - There are Four types of Operators.
 - `Arithmatic Operator:`
     - There are 8 Operators in Arithmatic Operators.
@@ -300,7 +307,6 @@ print(bin(a))
 print(bin(0b11))
 # Output : 0b11
 ```
-
 - `Membership Operators:`
     - Returns Boolean Value.
     - `In:`
@@ -320,3 +326,71 @@ print(bin(0b11))
     - `Is Not:`
         - It Returns True when Specified Data Object and given Data Object is Diffreant.
     - a=b : Explicit Conversion (we did this by our own hand) thats why it is Consider as Partially Immutable means 50% Immutable not 100%.
+
+## `Control Statements:`
+- It is use to Control the Execution Flow of the code.
+- It Helps in Efficiently Executing Code by Saving Time & Memory.
+- Control Statement Executes a Prticulay Block of Code only when the Condition is True.
+- `if Contrl Statement:`
+    - It is Control Statement.
+    - Declared by Kyword `if`.
+    - if Block
+    - Check Conditions
+    - Efficient -> Save Time and Memory.
+    - Any Positive and Negative Number consider as a True. Truty Value
+    - 0 Consider as a False. Falsy Value
+    - -0 -> Entity: Something that Exist. -> Tecnically Wrong Value. 
+    - Syntax:
+```python
+if True:
+    print("Welcome!!")
+if False:
+    print("Welcome!!")
+```
+- `if-else Control Statement:`
+    - Else Block is Specified below if block.
+    - No Conditions are Checked in Else Statement.
+    - It Executes when if Statement is False. 
+    - If Else condition is not Declared then it Returns `Blank` Value. means Return's Nothing on Console Screen. 
+    - Syntax:
+```python
+if True:
+    print("Welcome!!")
+else:
+    print("Bye..")
+``` 
+- `if-elif Control Statement | if-elif-ladder Control Statement:` 
+    - Multiple Conditions are checked in elif Control Statement.
+    - Starts with if Statement can Continue with many elif statements and may or may end with else.
+    - Syntax:
+```python
+if condition 1:
+    # Code|Logic
+elif condition 2:
+    # Code|Logic
+elif condition 3:
+    # Code|Logic
+else:
+    # Code|Logic
+```  
+- `match Control Statement: | Switch Control Statement`
+    - It is declared by the keyword match.
+    - it Contains many no of cases  each case has label.
+    - Data match with the case label, the case label is Execute.
+    - Case is Declared by the keyword case followed by case label & identation.
+    - the `Wild Charecter` (_) case charecter executed when the no data matches with case labels.
+    - Syntax:
+```python
+match value:
+    case 1:
+        # Code|Logic
+    case 2:
+        # Code|Logic
+    case 3:
+        # Code|Logic
+    case _: # Default Case
+        # Code|Logic
+```
+
+
+
