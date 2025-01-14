@@ -1,6 +1,6 @@
 # `Python`
 ## `Notes:`
-- `Guido van Rossum` Inventer of `Python` - `Monty Python Flying Circus`.
+- `Guido van Rossum` Inventer of `Python` - `Monty Python's Flying Circus`. `Python came into Picture just to help those people who don't know how to write a code`
 - `James Gosling` - Inventer of `Java` - `Oak`
 - `Dennis Ritchie` - Inventer of `C`.
 - `Michael Widenius` - Inventer of `MySql`.
@@ -19,22 +19,22 @@
 - `High Level Language` (HLL) -> Python, English
 - `Low Level Language` (LLL) -> Machine Level Language, Assembly Language-> Registers, Ic's
 - `Binery Language` -> Byte Code -> 0 & 1
-- `Constructive Language` - Create a Server - That's why we can use Python in web
+- `Constructive Language` - Create a Server - That's why we can use Python in web -> While "constructive language" is not a standard term, it could be used informally to describe Python’s role in building and constructing web applications, as it helps assemble server functionality efficiently.
+- If you're coining a term, you could say "constructive backend language" to emphasize Python’s role in creating server-side architectures.
 - `Scripting Language` -> Use in Hacking 
 - `Interpriter Language` (Logical Exception) (Run Time Exception) (Bytecode Verification) -> Checks Byte Code Standards.
 - `Compile Language` (Syntactical Error) (Compile Time Error)
 <!-- - MySql -> YACC -> Yet Only Compile Compile -> C++ and MySql Two Compilers  -->
 - `Robust in Nature` - Memory Management After Code Execution | `Clears Memory After Usage`
 - `Scalable Language` - Compatible to Code with Every Language -> `MySql`, `JavaScript`
-- `Integrated Devlopment Environment:`
+- `Integrated Devlopment Environment:` & `Debugger`
     - Here No Need to Create New File
         - `Jupiter` -> Open Source
         - `Python CLI IDLE` (File will Not Be Save) REPL (Read Evaluate Print Loop) Prompt in Windows Shell in Mac
     - Here Need to Create New File
         - `VS Code` -> Microsoft and it is Open Source to Buid Yourself.
         - `Pycharm` -> JetBrains
-- `Termination ( ; ):` Why Optional? -> In System Libraries(Assembly Language) already /n is available after the print("..."/n) so no need to ( ; ) Terminate Line. 
-- `Concatination ( , ):` Join
+        - `Intellige1 -> Java
 - `Advanced Libraries` - Enumration ->: AI & Ml
     - Permutation and Combination
     - Probability
@@ -42,8 +42,10 @@
     - `Numpy` - Data Manuplation -> Heavy Focus on Arrays
     - `Pandas` - Data Operations
     - `Matplotlib` - Visualisation -> Graphs, Ven Diagrams
-- `Variable` -> The Name of Memory Location
 - `print` -> Returns Each Charecter on Console Screen.
+    - Double Coatation & Single Coatation.
+    - print("'Pratik\'s Birthaday'")
+    - \' (Back Slash) Ignores Special Charecter. eg: print('partik\'s "laptop"')
 - `type` -> Returns Data Type of Data. 
 - Companie Work on Python: `Infosis python 20%`, java 40%, deops 40%.
 - Difference Between `Function` and `Method` -> Block of Code which Executes Targeted Code called Normal Function And Function Use in Class called Method. 
@@ -99,6 +101,18 @@ print(type(x))  # Output: <class 'int'>
 
 - `BODMAS:` `Border: (){}[]` `Order: Square & Square Root`, ` Divide: / Multiply: *`, `Addition: + Subtraction: -.`
 
+## `Special Charecters in Python:`
+- `Termination ( ; ):` Why Optional? -> In System Libraries(Assembly Language) already /n is available after the print("..."/n) so no need to ( ; ) Terminate Line. 
+- `Concatination ( , & + ):` Join
+    - print("Pratik" + "Majage")
+- `New Line ( \n )` -> go to new line 
+- `Row String ( r )` ->  eg: print(r'c:\docs\nayan')
+- `Back Slash ( \ )` -> Ignores Special Charecter. eg: print('partik\'s "laptop"')
+- `Privious Output ( _ )` -> Output of Privious Operation.
+
+## `Variable:`
+- `Variable` -> The Name of Memory Location
+
 ## `Addvantages:`
 - `Easy to Learn`
 - `Easy to Code`
@@ -110,29 +124,49 @@ print(type(x))  # Output: <class 'int'>
 - `Free & Open Source`
 - `High Level Language`
 - `Large Community Support`
+- `fastest Groing Language - Devlopers & Libraries Companies & Areas ML GUI Soft.D Web.D`
 
 ## `Data Types:`
 - `Numerical:`
     - `Int` (Numbers)
-    - `Float` (Decial Point Value)
+    - `Float` (Decial Point Value) (Floating Point Representation)
     - `Complex` (ai+bj) -> Combination of Real and Imaginary Numbers.
 - `Sequential:`
     - `List []`
         - Combination of elements of Different Data Types
-        - There is Defferece between List Array
+        - There is Defferece between List & Array
+        - List is Mutable.
+        - We can perform certain Operation using Methods.
     - `Tuple ()`
         - Ues on large Data.
         - It take less Memory Space and less Time to Execute. 
+        - Tuple is Immutable. We can not ( Do Operations ) Change Once We Defined. 
+        - Limited Methods:
+            - count
+            - index
+        - Iteration is Fast than List.
     - `Set {}`
+        - Collections of Elements of Unique Elements (Same Or Different).
+        - Never Follow Sequence.
+        - Indexing not Supported.
+        - Not Support Duplicate Values.
         - Just Return Unique Value. No Duplicasy.
+        - We can perform certain Operation using Methods.
     - `Frozen Set`
         - It Use to Create Copy of Original Set.
     - `Dictionary {}`
         - Key Value Pair.
+    - `Range ( Start : End )`
+        -     
 - `String:`
     - Collections of Charecters.
     - Charecter (Char) Consider as a String.
     - In Python Value is By Default a String.  
+    - In a Computer Numbering start from Zero. -> String: collection of charecters in Array indexing start from 0.
+    - left to Right : 0 1 2 3
+    - Right to left : -1 -2 -3 -4
+    - Strings are immutable. we can not change once assign.
+    - len() -> Returns total length of string in int data type.
 - `Boolean:`
     - True & False. 1 & 0.
 
@@ -281,6 +315,7 @@ print(bin(0b11))
     - Immutabe : String, Tuple By Default in Python. When Similar Data is Present in Variable then it Represents by Same (Object) Memory Location.
     - All Data Types are Classes in Python.
     - `Is:`
+        - Compares and Returns Boolean Value.
         - It Returns True when Specified Data Object and given Data Object is Similar.
     - `Is Not:`
         - It Returns True when Specified Data Object and given Data Object is Diffreant.
