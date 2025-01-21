@@ -119,6 +119,10 @@ print(type(x))  # Output: <class 'int'>
 
 ## `Variable:`
 - `Variable` -> The Name of Memory Location
+- a = 5
+- id(a) -> get address
+- b = a
+- Whenever you create multiple variable and in case if they have Same Data they both will point to the Same Box. they will not be getting multiple boxes for each variable. and that's where python is more memory rfficient, right Beacouse youre not getting multiple data here
 
 ## `Addvantages:`
 - `Easy to Learn`
@@ -392,5 +396,47 @@ match value:
         # Code|Logic
 ```
 
+## `Loops:`
+- Repetetion - Iteration
+- Help to Execute Progressively | Repeatedly and with Enhancement.
+- `For Loop`
+    - Use keyword: for
+    - in(Membership Operator)
+    - range() - Predefined Function -> Accept 3 pameters -> Start|end|Difference eg:range(1,6), range(5,0,-1)
+    - for i in range(5,0,-1):
+- `break :` `It Terminates the Execution of Code.`
+- `continue :` `Omit the Perticular Situation.` 
+      
+## `Function:`
+- It is `Entry or Block of Code` which `Executes Targeted Logic.`
+- It `Identifies` by a `Function Name.`
+- By using `def` keyword.
+- `() : Function`
+- `: -> Dependancy Code (Identation)`
+- Single Python code has `Multiple Functions.`
+- Function Name should be `Unique.`
+- Function `Defination` - `Parameters`
+- Function `call` - `Arguments`
+- `Reusability:` `Write Once Use Multiple Time.`
+- `Function always Jump Upword Direction` thts why `Function call` is `always below the Function Defination.`
+- `return keyword:` `Return the value where the function call.`
+- A value can be use outside the function by using return keyword.
+- We can store the value in new variable by using return keyword.
+- We can use multiple functions in pirnt funcrions.
+    - `Non-Parametrise Functions.`
+    - `Parametrise Functions.`
+        - No of Arguments should match with the No of Parameters.
+        - Separate by Commas
+        - Parameter - Defination
+        - Argument - Call
+- `Ambiguity:` Multiple Functions has Same Name.
+- Priority to Nearest Closest Function.
+- Compatibility : Same Data Types.
+```python
+def Info():
+    print("Hello I.T")
+Info()
+```
+      
 
 
