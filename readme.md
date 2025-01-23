@@ -14,7 +14,7 @@
 - `Python` (https://www.python.org/) It also Called the `General Purpose Language`
 - Python 1.0 - 1994
 - Python 2.0 - 2000 Depricate in 2020
-- Python 3.0 - 2008 New and It has lot of Features.
+- Python 3.0 - 2008 New and It has lot of Features & Library Supports.
 - `PVM` - Python Vertual Machine witten in Assembly language Which use Machine Level Language and convert it into binary language. Do's (Byte Code Verification)
 - `High Level Language` (HLL) -> Python, English
 - `Low Level Language` (LLL) -> Machine Level Language, Assembly Language-> Registers, Ic's
@@ -49,13 +49,13 @@
     - `Numpy` - Data Manuplation -> Heavy Focus on Arrays
     - `Pandas` - Data Operations
     - `Matplotlib` - Visualisation -> Graphs, Ven Diagrams
-- `print` -> Returns Each Charecter on Console Screen.
+- `print` -> Returns Each Charecter on Console Screen. Except escape charecters like (/n). 
     - Double Coatation & Single Coatation.
     - print("'Pratik\'s Birthaday'")
     - \' (Back Slash) Ignores Special Charecter. eg: print('partik\'s "laptop"')
 - `type` -> Returns Data Type of Data. 
 - Companie Work on Python: `Infosis python 20%`, java 40%, deops 40%.
-- Difference Between `Function` and `Method` -> Block of Code which Executes Targeted Code called Normal Function And Function Use in Class called Method. 
+- Difference Between `Function` and `Method` -> Block of Code which Executes Targeted Logic called Normal Function. And Function Use in Class called Method. 
 - `( : )` -> `Identation` -> Dependency Code (Indentation)
 - Portable -> Works on Windows|Mac|Linux, Means platform Independent. 
 - Implicit Conversion : ByDefault Conversion.
@@ -122,15 +122,15 @@ print(type(x))  # Output: <class 'int'>
 - a = 5
 - id(a) -> get address
 - b = a
-- Whenever you create multiple variable and in case if they have Same Data they both will point to the Same Box. they will not be getting multiple boxes for each variable. and that's where python is more memory rfficient, right Beacouse youre not getting multiple data here
+- Whenever you create multiple variable and in case if they have Same Data they both will point to the Same Box. they will not be getting multiple boxes for each variable. and that's where python is more memory efficient, right Beacouse youre not getting multiple data here
 
 ## `Addvantages:`
 - `Easy to Learn`
 - `Easy to Code`
 - `Interprited Language`
 - `Compile Language`
-- `Robust in Nature`
 - `Scalable Language`
+- `Robust in Nature`
 - `Portable`
 - `Free & Open Source`
 - `High Level Language`
@@ -157,7 +157,7 @@ print(type(x))  # Output: <class 'int'>
             - index
         - Iteration is Fast than List.
     - `Set {}`
-        - Collections of Elements of Unique Elements (Same Or Different).
+        - Collections of Elements of Unique Elements (Same Or Different Data Types).
         - Never Follow Sequence.
         - Indexing not Supported.
         - Not Support Duplicate Values.
@@ -176,7 +176,7 @@ print(type(x))  # Output: <class 'int'>
     - In a Computer Numbering start from Zero. -> String: collection of charecters in Array indexing start from 0.
     - left to Right : 0 1 2 3
     - Right to left : -1 -2 -3 -4
-    - Strings are immutable. we can not change once assign.
+    - Strings are immutable. we can not change once we assign the value.
     - len() -> Returns total length of string in int data type.
 - `Boolean:`
     - True & False. 1 & 0.
@@ -184,7 +184,7 @@ print(type(x))  # Output: <class 'int'>
 ## `Operators:`
 - There are Four types of Operators.
 - `Arithmatic Operator:`
-    - There are 8 Operators in Arithmatic Operators.
+    - There are `8 Operators in Arithmatic Operators.`
     - `Addition:( + )`
         - Do's Addition | Summation.
         - Symbolis: Plus ( + ).
@@ -241,11 +241,11 @@ print(type(x))  # Output: <class 'int'>
         - Given value should be Greater than Equal to the Minimum Value.
 
     - Less Than Equal To: max
-        - Open Angular Bracket With Assignment Operator.
+        - Close Angular Bracket With Assignment Operator.
         - Given value should be less than Equal to the Maximum Value.
 
     - Equal To:
-        - Two Consicutive ( Continuous ) Assignment Operator called Equal to Operator.
+        - Two Consicutive ( Contiguous ) Assignment Operator called Equal to Operator.
         - Return's True when both are Similar values.
 
     - Not Equal To: `Not ( ! )`
@@ -277,7 +277,7 @@ print(type(x))  # Output: <class 'int'>
     - `Bin() Function` use to Convert an `Integer value` to `Binary Value` also use to `Identity of a binary value.`
     - `0b` : is use an identifier for Binary Value `Identity.`  
     - Addition of `1+1` Bitwise Operator is `10` where 1 is Carry and 0 is Remainder.
-    - `Bitwise ANd ( & ):` 1 1 -> 1
+    - `Bitwise AND ( & ):` 1 1 -> 1
         - It Returns 1 when all Inputs are 1 else it Returns 0.
     - `Bitwise OR ( | ):` 0 0 -> 0
         - It Returns 0 when all Inputs are 0 else it Returns 1.
@@ -344,6 +344,11 @@ print(bin(0b11))
     - Any Positive and Negative Number consider as a True. Truty Value
     - 0 Consider as a False. Falsy Value
     - -0 -> Entity: Something that Exist. -> Tecnically Wrong Value. 
+    - In Python, the condition if -0 will evaluate to False. Here's why:
+    - Explanation:
+        - In Python, 0 (zero) is considered falsy.
+        - The negative sign before 0 (i.e., -0) does not change its value; -0 is still 0 in Python.
+        - Therefore, if -0: will be treated as if 0:, which evaluates to False.
     - Syntax:
 ```python
 if True:
@@ -404,6 +409,11 @@ match value:
     - in(Membership Operator)
     - range() - Predefined Function -> Accept 3 pameters -> Start|end|Difference eg:range(1,6), range(5,0,-1)
     - for i in range(5,0,-1):
+- `While Loop`
+    - Use for Iteration.
+    - Intialise the variable.
+    - Use keword: while(condition) in brackets we have to give the condition.
+    - Increament|Decreament 
 - `break :` `It Terminates the Execution of Code.`
 - `continue :` `Omit the Perticular Situation.` 
       
@@ -438,5 +448,105 @@ def Info():
 Info()
 ```
       
+- Calss 
+    - class is a keyword to define the Class in Python.
+    - Class is a template of Object also know by Blueprint.
+    - Class is a Container.
+    - Class is a Combination of Data Members, Methods.(variables and Methods).
+    - Calss is a collection of set of Multiple Data Members and Member Functions.
+    - Class is a collection of Logic and Modues
+    - class keyword
+    - : - Identation (Indentation)
+    - Follows Camelcase Syntax Structure
+    - To Access Class methods or Variables we need to create class Object means Refrence Variable of calss.
+    - Syntax: class Data:
 
+- Methods and Functions:
+    - Methods:
+        - Function inside a class Called Method.
+        - In Python Method Has Copulsury Self Parameter.
+        - () are Mendatory to Methods.
+        - : Identation is Mendatory to Methods
+    - Function: 
+        - A BLock of Code which Executes Targete Logic called Function. It is Outside the class.
 
+- Special Method: 
+    - Constructor:
+        - Synatx: def __init__(self):
+        - def Keyword is Mendatory to Create a Method. Constructor is also a Method
+        - Self Parameter is Compulsury.
+        - Constructor has 1'st (high) Priority than Method in class. means Higher Priority than Normal Method
+        - Constructor allocates memory to class when object is Created.
+        - By default Call when Object is Creted. (Memory is allocated)
+        - Data() -> Class Constructor. this is how you call a Constructor.
+        - Does Not Require Refrence Variable.
+
+- Object
+    - By Using Class Constructor It Creates a Memory for Calss is known as Object.
+    - Syntax: obj = Data() | Refrence Variable = Class Constructor.
+    - Referance Variable refers the Memory Location. 
+    - By using Object (Referance Variable) we access the calss variables and Methods outside the calss.
+
+- Self:
+    - Self is a Parameter.
+    - Refers to the Current Object.
+    - Points To the Instance Variable.
+    - Self is Use to Deferentiate the Local and Instance Variable.
+    - Self is use to Call the Current Object Method.
+    - Within Class we can call multiple Method from inside the another method.
+    - It make's Processor to jump easily within the calss one method to another method.
+
+- Instance Variable:
+    - A Varible within the Calss and outside the Methods called Instance Variable.
+    - If you want to use Instance Varialbe in the Method we need to use self keword. like: self.num1, self.num2
+    - Instance variable accessible outside the class by using the Objects.
+    - The Scope of Instance Variable is within the Class.
+
+- Local Variables:
+    - A Variable inside the Method called the Local variable.
+    - The Scope of Local Variable is Within the Method Block.
+    - Parametrise variables are local varibles.  
+
+- Armstrong: 153
+    - A number whose summation of cube of each digit is the same number is called Armstrong Number.
+    - 153 -> (Cube) 1**3 | 5**3 |3**3 -> (Summation) 1|125|27 -> 153 
+    - Save original value to another variable beacouse it may be chances to change the Original number. -> temp = num
+    - Intialise the sum by 0. -> sum = 0 
+    - Use loop for iteration till condition makes false. -> while(num>0)
+    - Grab Last Digit -> rem = rem % 10
+    - Formula: sum = sum + (rem*rem*rem)
+    - Remove Last Digit = num = num // 10 | num = int(num/10) type cast to integer.
+    - Check the Original number and Armstrong Number by using Ff-Else Condition -> if sum==temp:
+    - If true print sum is Armstrong else print temp is not Armstrong number.  
+
+- Palindrome: 121
+    - A number whose Reverce Number is the same Number called Palindrome Number.
+    - 121 -> 121 | 353 -> 353 
+    - Save Number to another Variable. -> temp=num 
+    - intialise sum by 0. -> sum = 0
+    - use loop for iteration till condition makes false. -> while(num>0)
+    - Grab Last Digit. -> rem = rem % 10
+    - Formula -> sum = (sum * 10) + rem
+    - Remove Last Degit. -> num = num//10 | num = int(num/10)
+    - Check the Original number and Palindrome Number by using Ff-Else Condition -> if sum==temp:
+    - If true print sum is Palindrome else print temp is not Palindrome number.  
+
+- Factorial: 5!
+    - 5! -> (Start fact) 1 * 1 2 3 4 5 -> 120
+    - Take a input range from user.
+    - Intialise fact by 1. -> fact = 1
+    - Use for loop to reach the condition. -> for i in range(1,num+1):
+    - Formula: fact = fact*i
+    - Print Factorial number
+
+- Fibonacci: 
+    - Addition of Privious two Numbers Called the Fibonacci series. 
+    - By Default Start from 0 & 1.
+    - Intialize two variables with 0 and 1. -> p1 = 0, p2 = 1
+    - Take a Range from User by Using Input.
+    - Print privious numbers.
+    - Use for Loop To Iterate. -> For i in range(2 to num)
+    - Start from 2 beacouse we already print privious two values.
+    - Formula: p3 = p1 + p2
+    - Print p3
+    - Swap Values -> p1=p2, p2=p3
