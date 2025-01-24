@@ -447,8 +447,8 @@ def Info():
     print("Hello I.T")
 Info()
 ```
-      
-- Calss 
+## `OOP's: Object Oriented Programming:`
+- `Class:`
     - class is a keyword to define the Class in Python.
     - Class is a template of Object also know by Blueprint.
     - Class is a Container.
@@ -461,17 +461,17 @@ Info()
     - To Access Class methods or Variables we need to create class Object means Refrence Variable of calss.
     - Syntax: class Data:
 
-- Methods and Functions:
-    - Methods:
+- `Methods and Functions:`
+    - `Methods:`
         - Function inside a class Called Method.
         - In Python Method Has Copulsury Self Parameter.
         - () are Mendatory to Methods.
         - : Identation is Mendatory to Methods
-    - Function: 
+    - `Function:` 
         - A BLock of Code which Executes Targete Logic called Function. It is Outside the class.
 
-- Special Method: 
-    - Constructor:
+- `Special Method:` 
+    - `Constructor:`
         - Synatx: def __init__(self):
         - def Keyword is Mendatory to Create a Method. Constructor is also a Method
         - Self Parameter is Compulsury.
@@ -481,13 +481,15 @@ Info()
         - Data() -> Class Constructor. this is how you call a Constructor.
         - Does Not Require Refrence Variable.
 
-- Object
+- `Object:`
     - By Using Class Constructor It Creates a Memory for Calss is known as Object.
     - Syntax: obj = Data() | Refrence Variable = Class Constructor.
     - Referance Variable refers the Memory Location. 
     - By using Object (Referance Variable) we access the calss variables and Methods outside the calss.
+    - Refrence Variable is intermediatery between Object and Memory Location. Method <- Refrence Varible -> Memory Location
+    - Refrence Variable Refers Data Members of Class.
 
-- Self:
+- `Self:`
     - Self is a Parameter.
     - Refers to the Current Object.
     - Points To the Instance Variable.
@@ -496,18 +498,19 @@ Info()
     - Within Class we can call multiple Method from inside the another method.
     - It make's Processor to jump easily within the calss one method to another method.
 
-- Instance Variable:
+- `Instance Variable:`
     - A Varible within the Calss and outside the Methods called Instance Variable.
     - If you want to use Instance Varialbe in the Method we need to use self keword. like: self.num1, self.num2
     - Instance variable accessible outside the class by using the Objects.
     - The Scope of Instance Variable is within the Class.
 
-- Local Variables:
+- `Local Variables:`
     - A Variable inside the Method called the Local variable.
     - The Scope of Local Variable is Within the Method Block.
     - Parametrise variables are local varibles.  
 
-- Armstrong: 153
+## `Problem Statements:`
+- `Armstrong: 153`
     - A number whose summation of cube of each digit is the same number is called Armstrong Number.
     - 153 -> (Cube) 1**3 | 5**3 |3**3 -> (Summation) 1|125|27 -> 153 
     - Save original value to another variable beacouse it may be chances to change the Original number. -> temp = num
@@ -519,7 +522,7 @@ Info()
     - Check the Original number and Armstrong Number by using Ff-Else Condition -> if sum==temp:
     - If true print sum is Armstrong else print temp is not Armstrong number.  
 
-- Palindrome: 121
+- `Palindrome: 121`
     - A number whose Reverce Number is the same Number called Palindrome Number.
     - 121 -> 121 | 353 -> 353 
     - Save Number to another Variable. -> temp=num 
@@ -531,7 +534,7 @@ Info()
     - Check the Original number and Palindrome Number by using Ff-Else Condition -> if sum==temp:
     - If true print sum is Palindrome else print temp is not Palindrome number.  
 
-- Factorial: 5!
+- `Factorial: 5!`
     - 5! -> (Start fact) 1 * 1 2 3 4 5 -> 120
     - Take a input range from user.
     - Intialise fact by 1. -> fact = 1
@@ -539,7 +542,7 @@ Info()
     - Formula: fact = fact*i
     - Print Factorial number
 
-- Fibonacci: 
+- `Fibonacci:`
     - Addition of Privious two Numbers Called the Fibonacci series. 
     - By Default Start from 0 & 1.
     - Intialize two variables with 0 and 1. -> p1 = 0, p2 = 1
@@ -550,3 +553,123 @@ Info()
     - Formula: p3 = p1 + p2
     - Print p3
     - Swap Values -> p1=p2, p2=p3
+
+## `Lambda:`
+- `Lambda Function:`
+    - It is Anonymous (Unknown) Function. No Function Name.
+    - Declare by the keyword lambda.
+    - It is ShortHand Function (Oneline Function)
+    - It is not use def keyword.
+    - It is Returning Function.
+    - It is Parametrize Function.
+    - Syntax: Variable = Lambda Parameters : Expression
+      
+- `Lambda vs Method:`
+    - `lambda:`
+        - Function is Anonymous.
+        - No use of def keyword.
+        - Always Parametrise and returning function.
+        - use for simple logic.
+        - Usecase - OneLine Function.
+    - `Method:`
+        - Function Should have Name.
+        - Use def keyword to declare the function.
+        - It may be or may not be Parametrise or Returning Function.
+        - use for Complex logic.
+        - MultiLine Funcion.
+        - Self Parameter is Compulsury.
+          
+- `Constructor vs Method:`
+    - `Constructor:`
+        - Constructor declare by def keyword.
+        - Constructor name is __init__.
+        - Constructor has compulsory self parameter.
+        - It executes Immediately. higher pripity than method.
+        - No need of Refrence Variable.
+        - It cretes memory for class data members. 
+    - `Method:`
+        - Function Should have Name.
+        - Use def keyword to declare the function.
+        - It may be or may not be Parametrise or Returning Function.
+        - use for Complex logic.
+        - MultiLine Funcion.
+        - Self Parameter is Compulsury.
+          
+- `Types of Function:`
+    - Normal Function
+    - Method Function: A function declare inside the class called method.
+    - Constructor Function
+    - Parametrise Function: no of Arguments are match with no of Parameters.
+    - Non-Parametrise Function
+    - Returning Function
+    - Lambda Function (Anonymous Function)
+    - Nested Function (Inner Function): Function Declare inside another Function.
+
+## `String:`
+- `String:`
+    - Collection of Charecters called String:
+    - Charecter does not exist in Python. Each Charecter consider as a String.
+      
+- `String & Functions:`
+    - `Concatination:`
+        - String can be added by Concatination.
+        - a = "Hi" | b = "How are you?" 
+        - print(a+b)
+    - `functions Start from is__ Return Boolean Values:`
+    - `isalnum:`
+        - Return Boolean Value.
+        - Return true when string contains Alphabets and Numbers.
+        - Return false when string contains Special Charecters and Space.
+        - print(data.isalnum())
+    - `isalpha:`
+        - Return Boolean Value.
+        - Return true when string contains Alphabets.
+        - print(data.isalpha())
+    - `islower:`
+        - Return Boolean Value.
+        - Return true when given string is in lowercase.
+        - print(data.islower())
+    - `isupper:`
+        - Return Boolean Value.
+        - Return true when given string is in uppercase.
+        - print(data.isupper())   
+    - `isdigit:`
+        - Return Boolean Value.
+        - Return true when given string is in Numeric Format.
+        - Return false when given string contains space and special charecters.
+        - print(data.isdigit())
+    - `join:`
+        - It mixes the given strings one charecter at a time.
+        - print(s1.join(s2))
+    - `lower:`
+        - convert uppercase to lowercase.
+        - print(s3.lower())
+    - `upper:`
+        - convert lowercase to uppercase.
+        - print(s3.upper())
+    - `swapcase:`
+        - It will Reverce the case value of a given string upper to lower and lower to upper.
+        - print(s3.swapcase())
+    - `title:`
+        - It converts every first letter of each word in capitalcase.
+        - print(s3.title())
+    - `replace:`
+        - Replace function change Old String to New String.
+        - print(s3.replace("bad","good"))
+    - `find:`
+        - Return index Posititon of given String. 
+        - Return -1 if not Found
+        - print(s3.find("b"))
+    - `index:`
+        - Return index Posititon of given String.
+        - Return Exception if not Found. Terminate the code. (substring not found)
+        - print(s3.index("z"))
+            
+          
+## `Format Specifier:`
+- `Format Specifier:`
+    - Format Specifier refers to corresponding Variable in order to reflect the correct value on the console screen.
+    - %d -> Integer
+    - %s -> String
+    - %f -> Float
+    - print("Roll No is %d, Name is %s, Percentage are %f"%(rollno,name,percentage))
