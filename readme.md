@@ -673,3 +673,120 @@ Info()
     - %s -> String
     - %f -> Float
     - print("Roll No is %d, Name is %s, Percentage are %f"%(rollno,name,percentage))
+
+- `list:`
+    1. `append:` 
+    2. `extend:` 
+    3. `insert:`
+    4. `remove:`
+    5. `pop:`
+    6. `index:`
+    7. `count:`
+    8. `reverse:`
+    9. `sort:` & `sort:` `reverse=True`
+    10. `clear:`
+    11.  `copy:`
+
+    - `append:`
+        - Add the element at the end of the list.
+        - Tuple  also append in another list
+        - Set also append in another list
+        - It do partition in appended list by [] () 
+        - Add full element
+    - `extend:`
+        - It merges new iteration into the current list.
+        - It do merges in existing list.
+        - It is Iterable Specific Method.
+        - It merge list does not make partition's
+        - extend list in another list
+        - extend tuple in another list
+        - extend element: add's one by one single charecter in the element added in list.
+    - `insert:`
+        - Add elemements at starting
+        - It is use to add element at specific index position inside a list.
+        - syntax: insert(index,element)
+    - `remove:`
+        - 1'st occurance remove.
+        - It will remove 1'st occurance of the specified element.
+    - `pop:`
+        - remove last element by default
+        - specific index element will be poped out.
+        - syntax: pop(index)
+    - `index:`
+        - It will return the index value of the specified element.
+    - `count:`
+        - It will return the no of occurance of the specified element. 
+    - `reverse:`
+        - Reverse the order of your list.
+    - `sort:` & `sort:` `reverse=True`
+        - sort in asending order
+        - sort in descending order
+        - It is use to return in ascending order.
+        - It is use to return in descending order.
+    - `clear:`
+        - return empty list.
+        - delete all element in the list.
+    -  `copy:`
+        - copy's list in another destination.  
+      
+- `Dictionary:`
+    1. `get:`
+    2. `items:`
+    3. `keys:`
+    4. `values:`
+    5. `copy:`
+    6. `update:`
+    7. `pop:`
+    8. `popitem:`
+    9. `clear:`
+        
+    - `get:`
+        - It will return corresponding value of the specified key
+        - syntax: get(key)
+        - one key at a time
+    - `items:`
+        - It will return key value pair in tuple format.
+    - `keys:`
+        - It will return list of keys in tuple format
+    - `values:`
+        - It will return list of values in tuple format
+    - `copy:`
+        - use to copy the data to the targeted destination 
+    - `update:`
+        - It is use to update key value inside a dictionary
+        - If the key is already present then the value is replace
+        - If key is not present then key value apir is added to the dictoneary
+    - `pop:`
+        - It will remove the key value pair of specified kay  
+    - `popitem:`
+        - By default remove last kay value pair 
+    - `clear:`
+        - Return empty dictoneary.
+     
+### `Inheritance: When The Object of child class aquires properties of object of parent class is called Inheritance. When One Child class aquires the properties of parent class is called Inheritance. V25.01.27`
+- `It is Object Oriented Concept.`
+- `Parent Class: Parent calss|Child Class|Super Class.`
+- `Child Class: Child Class|Derived Class|Sub Class.`
+- `It is Not mendatory to always say object word in the types of Inheritance defination.`
+### `Types of Inheritance:`
+- `Single Level Inheritance: When Object of One Child class aquries the properties of object of One Parent class.`
+- `Multilevel Inheritance: When One child class is the parent of another child class such inheritance is called as multilevel inheritance`
+- `Multiple Inheritance: When One child class inherited the properties of multiple parent class such inheritance is called as Multiple Inheritance.`
+- `Hybrid Inheritance: `
+
+- By default Constructor call in python when object is created.
+- Two Types Calling:
+- Child() -> by Default -> Implicit 
+- obj.Child() -> By Own Hand -> Explicit
+- Constructor creates Object(Memory) by default.
+- By default Object created Constructor Implictly.
+- mro() -> Method Resolution Order. It is nothing but scequence of properties in Inheritance. -> Proritywise.
+- Babli, Bunty, Pandi, Pandu, Object.
+- C->A
+- Call Imediate Parent Class. Still Implimented this Concept Beacouse, 
+- It Accessing the elements of Parent calss B which is inherited from the Parent calss A. 
+- Beacouse of Inheritance Still it can access the m1 method into the B class.
+- `Call Imediate Parent Class. Still Implimented this Concept Beacouse, It Accessing the elements of Parent calss B which is inherited from the Parent calss A. Beacouse of Inheritance Still it can access the m1 method into the B class.`
+
+
+
