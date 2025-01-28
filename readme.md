@@ -727,7 +727,56 @@ Info()
         - return empty list.
         - delete all element in the list.
     -  `copy:`
-        - copy's list in another destination.  
+        - copy's list in another destination.
+     
+- The extend() and append() functions in Python are methods used to modify lists, but they work differently in terms of how they add elements to the list.
+- `append() Method:`
+    - Purpose: Adds a single element to the end of the list.
+    - Behavior: The entire argument passed to append() is treated as a single element, even if it is a list or another iterable.
+    - Syntax: list.append(element)
+    - Parameters: Takes a single element as its argument.
+    - Return Value: Returns None (modifies the list in-place).
+    - Example 1: Adding a single element
+    - my_list = [1, 2, 3]
+    - my_list.append(4)  # Adds 4 as a single element
+    - print(my_list)  # Output: [1, 2, 3, 4]
+    - Example 2: Adding another list
+    - my_list = [1, 2, 3]
+    - my_list.append([4, 5])  # Adds [4, 5] as a single element
+    - print(my_list)  # Output: [1, 2, 3, [4, 5]]
+
+- `extend() Method:`
+    - Purpose: Extends the list by appending all elements from an iterable (e.g., another list, tuple, string, etc.).
+    - Behavior: It iterates over the argument and adds each element individually to the list.
+    - Syntax: list.extend(iterable)
+    - Parameters: Takes an iterable (e.g., list, tuple, string).
+    - Return Value: Returns None (modifies the list in-place).
+    - Example 1: Extending with another list
+    - my_list = [1, 2, 3]
+    - my_list.extend([4, 5])  # Adds 4 and 5 as separate elements
+    - print(my_list)  # Output: [1, 2, 3, 4, 5
+    - Example 2: Extending with a string
+    - my_list = [1, 2, 3]
+    - my_list.extend("45")  # Adds '4' and '5' as separate elements
+    - print(my_list)  # Output: [1, 2, 3, '4', '5']
+
+- Key Differences
+|Aspect |append()	|extend()|
+|-------|-----------|--------|
+|Input	|Single element	|Iterable (list, tuple, string, etc.)|
+|Behavior	|Adds the entire input as a single element	|Iterates over the input and adds each element individually|
+|Use Case	|Adding a single item (object, number, etc.)	|Adding multiple elements from an iterable|
+|Example	|list.append([4, 5]) → [[4, 5]]	|list.extend([4, 5]) → [4, 5]|
+
+- When to Use
+    - Use append() when you want to add a single element to the list.
+    - Use extend() when you want to merge elements from another iterable into the list.
+
+
+- Visual Representation
+- For a list my_list = [1, 2, 3]:
+    - my_list.append([4, 5]) → [1, 2, 3, [4, 5]]
+    - my_list.extend([4, 5]) → [1, 2, 3, 4, 5]
       
 - `Dictionary:`
     1. `get:`
@@ -787,6 +836,194 @@ Info()
 - It Accessing the elements of Parent calss B which is inherited from the Parent calss A. 
 - Beacouse of Inheritance Still it can access the m1 method into the B class.
 - `Call Imediate Parent Class. Still Implimented this Concept Beacouse, It Accessing the elements of Parent calss B which is inherited from the Parent calss A. Beacouse of Inheritance Still it can access the m1 method into the B class.`
+
+- In object-oriented programming, multilevel inheritance and multiple inheritance are two different types of inheritance relationships in which child classes inherit features from one or more parent classes. Here's a detailed comparison:
+1. Multilevel Inheritance
+- Definition:
+- In multilevel inheritance, a class is derived from a class that is itself derived from another class. This forms a "chain" of inheritance where properties and methods are passed down through multiple levels.
+- Structure:
+    - Class A (Base Class)
+       ↑
+    - Class B (Derived from A)
+       ↑
+    - Class C (Derived from B)
+- Key Features:
+    - Inherits properties and methods from one parent class and passes them to the next level.
+    - Creates a hierarchical chain.
+    - Child classes can access properties and methods of all their ancestors.
+
+2. Multiple Inheritance
+Definition:
+In multiple inheritance, a class can inherit from more than one base class. This allows the derived class to access properties and methods from multiple parent classes.
+
+- Structure:
+    - Class A         Class B
+       ↑               ↑
+             Class C (Derived from A and B)
+
+- Key Features:
+    - Combines features from multiple parent classes into a single child class.
+    - Useful when a class needs to inherit different functionalities from various sources.
+    - Can lead to ambiguities (e.g., diamond problem) if multiple parent classes have methods with the same name.
+
+- Use Cases
+    - Multilevel Inheritance: When creating a hierarchy where each level specializes or adds to the behavior of its parent class.
+    - Multiple Inheritance: When combining functionalities from multiple, unrelated parent classes.
+
+- Summary
+    - Multilevel Inheritance: A step-by-step inheritance chain.
+    - Multiple Inheritance: Directly inherits from multiple classes.
+
+- Key Differences:
+|Feature|	Multilevel Inheritance|	Multiple Inheritance|
+|-------|-------------------------|---------------------|
+|Definition|	Inheritance through multiple levels.|	Inheritance from multiple parent classes.|
+|Structure|	Forms a chain-like hierarchy.|	Combines features from multiple sources.|
+|Number of Parents|	A class inherits from a single parent at each level.|	A class can inherit from two or more parents.|
+|Complexity|	Less complex; linear structure.|	More complex; can lead to ambiguities.|
+|Example Classes|	Grandparent → Parent → Child|	Father, Mother → Child|
+|Common Issue|	No ambiguities.|	Possible method resolution conflict (diamond problem).|
+
+`------------------------------------------------------------------------------------------------------------------`
+# `Java:`
+
+In Java, **multiple inheritance is partially supported**. Here's a detailed explanation:
+
+---
+
+### **1. Multiple Inheritance with Classes**
+- Java does **not support multiple inheritance** with classes.
+- This restriction exists to avoid **ambiguities** caused by the **diamond problem**, where two parent classes may have methods with the same name, leading to conflicts.
+- If you try to inherit from multiple classes, the compiler will throw an error.
+
+#### **Example of Unsupported Multiple Inheritance**:
+```java
+class ClassA {
+    void show() {
+        System.out.println("ClassA method");
+    }
+}
+
+class ClassB {
+    void show() {
+        System.out.println("ClassB method");
+    }
+}
+
+// Compilation error: Cannot inherit from multiple classes
+class ClassC extends ClassA, ClassB {
+    public static void main(String[] args) {
+        ClassC obj = new ClassC();
+        obj.show();
+    }
+}
+```
+
+**Error**:  
+`ClassC cannot inherit from both ClassA and ClassB.`
+
+---
+
+### **2. Multiple Inheritance with Interfaces**
+- Java supports multiple inheritance through **interfaces**.
+- A class can implement multiple interfaces, and there is no ambiguity because interfaces only declare methods (they do not provide implementations, except in the case of default methods introduced in Java 8).
+
+#### **Example of Supported Multiple Inheritance with Interfaces**:
+```java
+interface InterfaceA {
+    void showA();
+}
+
+interface InterfaceB {
+    void showB();
+}
+
+class ClassC implements InterfaceA, InterfaceB {
+    public void showA() {
+        System.out.println("InterfaceA method");
+    }
+    
+    public void showB() {
+        System.out.println("InterfaceB method");
+    }
+    
+    public static void main(String[] args) {
+        ClassC obj = new ClassC();
+        obj.showA();
+        obj.showB();
+    }
+}
+```
+
+**Output**:
+```
+InterfaceA method
+InterfaceB method
+```
+
+---
+
+### **3. Handling Ambiguity with Default Methods (Java 8)**
+- If two interfaces have **default methods** with the same name, the implementing class must **override** the method to resolve the ambiguity.
+
+#### **Example of Resolving Ambiguity**:
+```java
+interface InterfaceA {
+    default void show() {
+        System.out.println("InterfaceA default method");
+    }
+}
+
+interface InterfaceB {
+    default void show() {
+        System.out.println("InterfaceB default method");
+    }
+}
+
+class ClassC implements InterfaceA, InterfaceB {
+    // Resolving ambiguity
+    @Override
+    public void show() {
+        System.out.println("Overridden method in ClassC");
+    }
+    
+    public static void main(String[] args) {
+        ClassC obj = new ClassC();
+        obj.show();
+    }
+}
+```
+
+**Output**:
+```
+Overridden method in ClassC
+```
+
+---
+
+### **Why Java Does Not Support Multiple Inheritance with Classes**
+1. **Diamond Problem**:
+   - When two parent classes have methods with the same name, the compiler cannot determine which method to inherit.
+
+2. **Code Maintainability**:
+   - It avoids the complexity and confusion of handling multiple class hierarchies.
+
+3. **Interfaces as a Solution**:
+   - Interfaces allow multiple inheritance of behavior (method declarations) without leading to ambiguity since the class implementing the interfaces provides the method implementation.
+
+---
+
+### **Summary**
+- **Java does not allow multiple inheritance with classes** to avoid ambiguity (diamond problem).
+- **Java allows multiple inheritance through interfaces**, providing a clean and conflict-free solution.
+
+`------------------------------------------------------------------------------------------------------------------`
+
+
+
+
+
+
 
 
 
