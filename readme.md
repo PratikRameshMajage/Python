@@ -760,13 +760,14 @@ Info()
     - my_list.extend("45")  # Adds '4' and '5' as separate elements
     - print(my_list)  # Output: [1, 2, 3, '4', '5']
 
-- Key Differences
-|Aspect |append()	|extend()|
-|-------|-----------|--------|
-|Input	|Single element	|Iterable (list, tuple, string, etc.)|
-|Behavior	|Adds the entire input as a single element	|Iterates over the input and adds each element individually|
-|Use Case	|Adding a single item (object, number, etc.)	|Adding multiple elements from an iterable|
-|Example	|list.append([4, 5]) → [[4, 5]]	|list.extend([4, 5]) → [4, 5]|
+
+`Key Differences`
+|Aspect         |append()	|extend()|
+|---------------|-----------|--------|
+|Input	        |Single element	|Iterable (list, tuple, string, etc.)|
+|Behavior	    |Adds the entire input as a single element	|Iterates over the input and adds each element individually|
+|Use Case	    |Adding a single item (object, number, etc.)	|Adding multiple elements from an iterable|
+|Example	    |list.append([4, 5]) → [[4, 5]]	|list.extend([4, 5]) → [4, 5]|
 
 - When to Use
     - Use append() when you want to add a single element to the list.
@@ -874,7 +875,7 @@ In multiple inheritance, a class can inherit from more than one base class. This
     - Multilevel Inheritance: A step-by-step inheritance chain.
     - Multiple Inheritance: Directly inherits from multiple classes.
 
-- Key Differences:
+`Key Differences:`
 |Feature|	Multilevel Inheritance|	Multiple Inheritance|
 |-------|-------------------------|---------------------|
 |Definition|	Inheritance through multiple levels.|	Inheritance from multiple parent classes.|
