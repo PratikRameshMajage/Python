@@ -41,19 +41,19 @@
     - Here Need to Create New File
         - `VS Code` -> Microsoft and it is Open Source to Buid Yourself.
         - `Pycharm` -> JetBrains
-        - `Intellige1 -> Java
+        - `Intellige` -> Java
 - `Advanced Libraries` - Enumration ->: AI & Ml
     - Permutation and Combination
     - Probability
     - Statistics
     - `Numpy` - Data Manuplation -> Heavy Focus on Arrays
     - `Pandas` - Data Operations
-    - `Matplotlib` - Visualisation -> Graphs, Ven Diagrams
+    - `Matplotlib` - Data Visualisation -> Graphs, Ven Diagrams
 - `print` -> Returns Each Charecter on Console Screen. Except escape charecters like (/n). 
     - Double Coatation & Single Coatation.
     - print("'Pratik\'s Birthaday'")
     - \' (Back Slash) Ignores Special Charecter. eg: print('partik\'s "laptop"')
-- `type` -> Returns Data Type of Data. 
+- `type` -> Returns Data Type of Data on the console screen. 
 - Companie Work on Python: `Infosis python 20%`, java 40%, deops 40%.
 - Difference Between `Function` and `Method` -> Block of Code which Executes Targeted Logic called Normal Function. And Function Use in Class called Method. 
 - `( : )` -> `Identation` -> Dependency Code (Indentation)
@@ -120,7 +120,7 @@ print(type(x))  # Output: <class 'int'>
 ## `Variable:`
 - `Variable` -> The Name of Memory Location
 - a = 5
-- id(a) -> get address
+- id(a) -> get address -> It is use to get the address of variable or memory location.
 - b = a
 - Whenever you create multiple variable and in case if they have Same Data they both will point to the Same Box. they will not be getting multiple boxes for each variable. and that's where python is more memory efficient, right Beacouse youre not getting multiple data here
 
@@ -135,7 +135,7 @@ print(type(x))  # Output: <class 'int'>
 - `Free & Open Source`
 - `High Level Language`
 - `Large Community Support`
-- `fastest Groing Language - Devlopers & Libraries Companies & Areas ML GUI Soft.D Web.D`
+- `fastest Groing Language - Developers & Libraries Companies & Areas ML GUI Soft.D Web.D`
 
 ## `Data Types:`
 - `Numerical:`
@@ -171,8 +171,9 @@ print(type(x))  # Output: <class 'int'>
         -     
 - `String:`
     - Collections of Charecters.
+    - In python Charecter data type does not exist. Only string data type exist.
     - Charecter (Char) Consider as a String.
-    - In Python Value is By Default a String.  
+    - In Python any Value consider By Default as a String.  
     - In a Computer Numbering start from Zero. -> String: collection of charecters in Array indexing start from 0.
     - left to Right : 0 1 2 3
     - Right to left : -1 -2 -3 -4
@@ -206,7 +207,7 @@ print(type(x))  # Output: <class 'int'>
         - Symbolis: Division ( / ) Forword Slash.
         - Minimum 2 Operands and 1 Operator specifically Operator lies within the 2 Operands.
         - Floor Division. Base Integer Value (3.5)-> 3
-        - Sealing Division. (3.5)-> 4
+        - Sealing Division. Round Integer Value (3.5)-> 4
     - `Floor Division:( // )` 
         - Do's Division and `return's the Quotient Base Integer Value`.
         - Symbolis: Division ( // ) `Two Consicative (Continous) Forword Slash`. 
@@ -334,7 +335,7 @@ print(bin(0b11))
 ## `Control Statements:`
 - It is use to Control the Execution Flow of the code.
 - It Helps in Efficiently Executing Code by Saving Time & Memory.
-- Control Statement Executes a Prticulay Block of Code only when the Condition is True.
+- Control Statement Executes a Prticular Block of Code only when the Condition is True.
 - `if Contrl Statement:`
     - It is Control Statement.
     - Declared by Kyword `if`.
@@ -423,9 +424,10 @@ match value:
 - By using `def` keyword.
 - `() : Function`
 - `: -> Dependancy Code (Identation)`
-- Single Python code has `Multiple Functions.`
+- Single Python code file has `Multiple Functions.`
 - Function Name should be `Unique.`
 - Function `Defination` - `Parameters`
+- Function expression.
 - Function `call` - `Arguments`
 - `Reusability:` `Write Once Use Multiple Time.`
 - `Function always Jump Upword Direction` thts why `Function call` is `always below the Function Defination.`
@@ -486,7 +488,7 @@ Info()
     - Syntax: obj = Data() | Refrence Variable = Class Constructor.
     - Referance Variable refers the Memory Location. 
     - By using Object (Referance Variable) we access the calss variables and Methods outside the calss.
-    - Refrence Variable is intermediatery between Object and Memory Location. Method <- Refrence Varible -> Memory Location
+    - Refrence Variable is intermediatery between Method and Memory Location. Method <- Refrence Varible -> Memory Location
     - Refrence Variable Refers Data Members of Class.
 
 - `Self:`
@@ -507,17 +509,17 @@ Info()
 - `Local Variables:`
     - A Variable inside the Method called the Local variable.
     - The Scope of Local Variable is Within the Method Block.
-    - Parametrise variables are local varibles.  
+    - Parametrise variables are local variables.  
 
 ## `Problem Statements:`
 - `Armstrong: 153`
     - A number whose summation of cube of each digit is the same number is called Armstrong Number.
-    - 153 -> (Cube) 1**3 | 5**3 |3**3 -> (Summation) 1|125|27 -> 153 
+    - 153 -> (Cube) 1 ** 3 | 5 ** 3 |3**3 -> (Summation) 1|125|27 -> 153 
     - Save original value to another variable beacouse it may be chances to change the Original number. -> temp = num
     - Intialise the sum by 0. -> sum = 0 
     - Use loop for iteration till condition makes false. -> while(num>0)
     - Grab Last Digit -> rem = rem % 10
-    - Formula: sum = sum + (rem*rem*rem)
+    - Formula: sum = sum + (rem * rem * rem)
     - Remove Last Digit = num = num // 10 | num = int(num/10) type cast to integer.
     - Check the Original number and Armstrong Number by using Ff-Else Condition -> if sum==temp:
     - If true print sum is Armstrong else print temp is not Armstrong number.  
@@ -664,8 +666,22 @@ Info()
         - Return index Posititon of given String.
         - Return Exception if not Found. Terminate the code. (substring not found)
         - print(s3.index("z"))
-            
-          
+- `String Functions`             
+    - isalnum
+    - isalpha
+    - isdigit
+    - islower
+    - isupper
+    - Concatination
+    - join
+    - upper
+    - lower
+    - title
+    - swapcase
+    - replace
+    - index
+    - find
+
 ## `Format Specifier:`
 - `Format Specifier:`
     - Format Specifier refers to corresponding Variable in order to reflect the correct value on the console screen.
@@ -815,7 +831,7 @@ Info()
      
 ### `Inheritance: When The Object of child class aquires properties of object of parent class is called Inheritance. When One Child class aquires the properties of parent class is called Inheritance. V25.01.27`
 - `It is Object Oriented Concept.`
-- `Parent Class: Parent calss|Child Class|Super Class.`
+- `Parent Class: Parent calss|Base Class|Super Class.`
 - `Child Class: Child Class|Derived Class|Sub Class.`
 - `It is Not mendatory to always say object word in the types of Inheritance defination.`
 ### `Types of Inheritance:`
