@@ -903,6 +903,270 @@ In multiple inheritance, a class can inherit from more than one base class. This
 |Example Classes|	Grandparent → Parent → Child|	Father, Mother → Child|
 |Common Issue|	No ambiguities.|	Possible method resolution conflict (diamond problem).|
 
+
+## `datetime:`
+- import datetime
+- datetime.datetime.now() : Current Date Time.
+- %a = Sat
+- %A = Saturday
+- %d = 08
+- %D = 02/08/25
+- %b = Feb
+- %B = February
+- %y = 25
+- %Y = 2025
+- %H = Hours
+- %M = Minutes
+- %S = Secondes
+- %f = Microseconds
+- %x = Data
+- %X = Time
+- %p = PM|AM
+- %I = 12 Hour's Format
+- %w = 6
+- %W = 05
+- %V = scequence of weeks Monday | Sunday
+- %c = Sat Feb  8 22\:22:57 2025
+
+## `Meta Charecters: (Regular Expressions)( search (Search in given data), findall (Find), sub (Replace), split (split according to Charecter or Space))` `Return Boolean Value`
+- Start : ^
+- end : $
+- Remaining Charecters : .*
+- No of Charecters : .
+- Specific no of Charecters : {3}
+- Or : |
+- 0 or 1 Charecter : .?
+- 1 or More Charecters : .+ 
+
+## `Specical Charecters:` `Returns Boolean Value` 
+- Start Charecter : "\APratik"
+- End Charecter : r"Pratik\b"
+- End Charecter : r"\BPratik"
+- Digit Value Match : "\d"
+- Non-Digit Value Match : "\D"
+- Return Space Value : "%s"
+- Returen Non-Space Charecters : "%S"
+- Return Space and Special Charecters : "%W"
+- Return Charecters : "%w"
+- Return end with Charecters : "%z" 
+
+## `numpy:`
+- Connect Wifi
+- Open jupyter
+- Pip install numpy
+- numpy - Package (Packase) - Set of Functions - Numerical Python - Array
+- import numpy
+- import numpy as np
+- as : Aliance : Another name refer to this entity
+- print(type(arr)) : class-numpy.ndarray
+- 1D : 1 Dimentional | Uni Dimentional
+    - a = np.array([1,2,3,4,5])
+- 2D : 2 Dimentional | Row's and Column's
+    - a = np.array([[1,2],[3,4]],[[5,6],[7,8]])
+- 3D : 3 Dimentional
+    - a = np.array([[[1,2],[3,4]],[[5,6],[7,8]],[[9,10],[11,12]]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 `------------------------------------------------------------------------------------------------------------------`
 # `Java:`
 
