@@ -454,6 +454,8 @@ Info()
     - class is a keyword to define the Class in Python.
     - Class is a template of Object also know by Blueprint.
     - Class is a Container.
+    - Attributes : Variables
+    - Bihaviour : Methods
     - Class is a Combination of Data Members, Methods.(variables and Methods).
     - Calss is a collection of set of Multiple Data Members and Member Functions.
     - Class is a collection of Logic and Modues
@@ -1035,6 +1037,100 @@ Overridden method in ClassC
 - **Java allows multiple inheritance through interfaces**, providing a clean and conflict-free solution.
 
 `------------------------------------------------------------------------------------------------------------------`
+`------------------------------------------------------------------------------------------------------------------`
+
+Here are 20 Python OOP (Object-Oriented Programming) practice questions covering **Multiple Inheritance, Multilevel Inheritance, Super Keyword, and Other OOP Concepts**:  
+
+These questions will help you **practice Multiple Inheritance, Multilevel Inheritance, Super Keyword, Method Overriding, Constructor/Destructor, Polymorphism, Abstraction, and Encapsulation in Python.** 
+
+### **Multiple Inheritance Questions:**  
+**Q1.** Using Multiple Inheritance, create separate classes for Armstrong, Palindrome, Factorial, and Fibonacci Series, and display their results.  
+
+**Q2.** Using Multiple Inheritance, draw:  
+  - Class 1: Pyramid  
+  - Class 2: Reverse Pyramid  
+  - Class 3: Diamond  
+  - Class 4: Use the **super()** method  
+
+**Q3.** Create a program using Multiple Inheritance where:  
+  - Class **Person** has attributes: name, age  
+  - Class **Job** has attributes: job_title, salary  
+  - Class **Employee** inherits both and displays details  
+
+**Q4.** Implement a **Bank System** using Multiple Inheritance with:  
+  - Class **Customer**: Contains name and account number  
+  - Class **Transaction**: Handles deposit and withdrawal  
+  - Class **BankAccount**: Inherits from both and maintains balance  
+
+**Q5.** Design a **Student Grading System** using Multiple Inheritance with:  
+  - Class **Student**: Name, roll number  
+  - Class **Marks**: Subject marks  
+  - Class **Result**: Inherits from both and calculates total marks and percentage  
+
+---
+
+### **Multilevel Inheritance Questions:**  
+**Q6.** Using Multilevel Inheritance, create a program that displays **String Methods** in one class and **List Methods** in another. Use **super()** to call methods from parent classes.  
+
+**Q7.** Implement a **Vehicle Hierarchy** using Multilevel Inheritance:  
+  - Class **Vehicle**: General attributes (e.g., brand, model)  
+  - Class **Car**: Specific car details (e.g., number of doors)  
+  - Class **SportsCar**: High-speed car features  
+
+**Q8.** Create a **Library Management System** using Multilevel Inheritance with:  
+  - Class **Library**: Stores book details  
+  - Class **Librarian**: Manages book lending  
+  - Class **User**: Borrows books  
+
+**Q9.** Design an **Online Shopping System** using Multilevel Inheritance:  
+  - Class **Product**: Stores product details  
+  - Class **Customer**: Stores customer information  
+  - Class **Order**: Manages order processing  
+
+**Q10.** Develop an **E-commerce Application** with:  
+  - Class **User**: Contains user details  
+  - Class **Buyer**: Inherits from User and adds cart functionality  
+  - Class **Order**: Processes orders  
+
+---
+
+### **Super Keyword & Method Overriding Questions:**  
+**Q11.** Create a program to show how **super()** is used in **Multiple Inheritance** to avoid ambiguity.  
+
+**Q12.** Implement **Method Overriding** in Python using a base class `Animal` and derived classes `Dog`, `Cat` that override the `make_sound()` method.  
+
+**Q13.** Design a **University Management System** where:  
+  - Class **Person**: Stores name and age  
+  - Class **Teacher** and **Student** inherit from Person  
+  - Use **super()** to initialize attributes  
+
+**Q14.** Implement a **Banking System** with:  
+  - Class **Bank**: Contains bank name and branch  
+  - Class **Account**: Inherits Bank and stores account details  
+  - Class **SavingsAccount**: Adds interest calculation  
+
+**Q15.** Create a **Shape Drawing System** where:  
+  - Class **Shape**: Defines a general draw() method  
+  - Class **Circle**, **Rectangle**, **Triangle** override draw()  
+
+---
+
+### **Constructor, Destructor, Polymorphism, and Abstraction Questions:**  
+**Q16.** Implement **Constructor Overloading** using default arguments in Python.  
+
+**Q17.** Demonstrate **Destructor (`__del__` method)** in Python using a class `Demo` to track object deletion.  
+
+**Q18.** Implement **Polymorphism** where different classes implement a common method `calculate_area()`.  
+
+**Q19.** Use **Abstract Classes** and **Methods** (`ABC` module) to create a program where:  
+  - Class **Shape** is abstract  
+  - Derived classes **Circle**, **Square**, **Triangle** implement `calculate_area()`  
+
+**Q20.** Implement **Encapsulation** where:  
+  - A class has private variables  
+  - Uses getter and setter methods to modify and access private variables  
+
+---
 
 
 
