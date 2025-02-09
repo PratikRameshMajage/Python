@@ -953,21 +953,55 @@ In multiple inheritance, a class can inherit from more than one base class. This
 ## `numpy:`
 - Connect Wifi
 - Open jupyter
-- Pip install numpy
+- Pip install numpy : use to Install this Package.
 - numpy - Package (Packase) - Set of Functions - Numerical Python - Array
+- numpy stands for Numerical Python.
+- It is an Array orinted Library.
+- Array function is use to declared an array.
+- Array is faster than a list as no new memory is created for Element. Efficient Memory management and Time management.
+- It can be declared in list format.
 - import numpy
 - import numpy as np
-- as : Aliance : Another name refer to this entity
+- as : Aliance : Another name refer to this entity (Library)
 - print(type(arr)) : class-numpy.ndarray
-- 1D : 1 Dimentional | Uni Dimentional
+- `Array:`
+    - Collection of elements of different data types.
+    - List and array define same but memory allocation is different.
+    - List with common memory allocation.
+- 0D : Zero Dimentional | consist only 1 Element
+    - a = np.array([22]) 
+- 1D : 1 Dimentional | Uni Dimentional | Consist only Rows
     - a = np.array([1,2,3,4,5])
-- 2D : 2 Dimentional | Row's and Column's
+- 2D : 2 Dimentional | Collection of Row's and Column's
     - a = np.array([[1,2],[3,4]],[[5,6],[7,8]])
-- 3D : 3 Dimentional
+- 3D : 3 Dimentional | x y z Dimentions
     - a = np.array([[[1,2],[3,4]],[[5,6],[7,8]],[[9,10],[11,12]]])
-
-
-
+- length : Total No of Elements eg.,5 
+- Index : Strat from 0 indexth Element eg.,5-1=4
+- ndim : Return Dimention of Array
+- `Index:`
+    - Index Position returns array Value Element.
+    - Value can be featched by specifing position.
+    - It should be specifing in square brackets.
+    - print(a[0])
+    - Negative Indexing allowed.
+    - Negative indexing start search from extreme right. 
+    - print(a[-1])
+    - In more than 1D array the indexing is in this format:
+        - 1'st priority given to Value index.
+        - 2'nd priority given to Element index.
+        - 3'rd priority given to Set index | Dimention index.
+- `Slicing:`
+    - It is used to select set of array by specifing start and end point by separating by : (Colan).
+    - If starting point is not mention it is consider as a endpoint. not mention means it consider as a last index position.
+    - Steps : Difference
+- `Sort:`
+    - It assembles the element of array in ascending order  
+- `searchsorted:`
+    - Show's where you can add that index position.
+    - a[5] = 43 : It will replace the value in given array.
+    - Search sorted need sort array in ascending order.
+    - It is a function which helps to load a new value without disturbing the order. 
 
 
 
