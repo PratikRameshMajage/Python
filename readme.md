@@ -950,7 +950,435 @@ In multiple inheritance, a class can inherit from more than one base class. This
 - Return Charecters : "%w"
 - Return end with Charecters : "%z"
 
-## `Polymorphism & File Handling V25.01.31`
+
+## `Polymorphism V25.01.31`
+
+### **Polymorphism in Python – From Beginner to Advanced**  
+
+Polymorphism is a key concept in Object-Oriented Programming (OOP) that allows objects of different classes to be treated as objects of a common superclass. This enables flexibility and reusability in code.  
+
+---
+
+## **🔹 1. What is Polymorphism?**  
+**Polymorphism** means "many forms" and allows the same function or operator to have different meanings depending on the context.
+
+💡 **Real-life Analogy:**  
+A single word can have different meanings in different situations.  
+For example, the word **"run"** can mean:  
+- **A person runs** 🏃 (physical activity)  
+- **A program runs** 💻 (execution of software)  
+- **A car runs** 🚗 (a vehicle in motion)  
+
+In Python, polymorphism allows us to use the same method name, function, or operator in multiple ways.
+
+---
+
+## **🔹 2. Types of Polymorphism in Python**  
+Python supports four types of polymorphism:  
+
+1. **Method Overriding (Runtime Polymorphism)**
+2. **Method Overloading (Compile-time Polymorphism)**
+3. **Operator Overloading**
+4. **Duck Typing**  
+
+---
+
+## **🔸 3. Method Overriding (Runtime Polymorphism)**
+🔹 **Definition:** Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its parent class.
+
+🔹 **Key Points:**  
+✔ Parent and child class have the same method name.  
+✔ The child class method **overrides** the parent class method.  
+
+### **Example of Method Overriding**
+```python
+class Animal:
+    def make_sound(self):
+        print("Some generic sound")
+
+class Dog(Animal):
+    def make_sound(self):  # Overriding the parent method
+        print("Bark!")
+
+class Cat(Animal):
+    def make_sound(self):  # Overriding the parent method
+        print("Meow!")
+
+# Creating objects
+a = Animal()
+d = Dog()
+c = Cat()
+
+# Calling the method
+a.make_sound()  # Output: Some generic sound
+d.make_sound()  # Output: Bark!
+c.make_sound()  # Output: Meow!
+```
+Here, the `make_sound()` method behaves differently depending on the object calling it.
+
+---
+
+## **🔸 4. Method Overloading (Compile-time Polymorphism)**
+🔹 **Definition:**  
+Method overloading allows multiple methods with the **same name** but **different arguments**.  
+
+🔹 **Important Note in Python:**  
+Unlike Java or C++, **Python does not support method overloading directly**. However, we can achieve it using default arguments or variable-length arguments (`*args` and `**kwargs`).
+
+### **Example of Method Overloading**
+```python
+class MathOperations:
+    def add(self, a=None, b=None, c=None):  
+        if a is not None and b is not None and c is not None:
+            return a + b + c
+        elif a is not None and b is not None:
+            return a + b
+        else:
+            return a
+
+# Creating object
+math_op = MathOperations()
+
+# Calling the method with different parameters
+print(math_op.add(5, 10))       # Output: 15
+print(math_op.add(5, 10, 15))   # Output: 30
+print(math_op.add(5))           # Output: 5
+```
+🔹 Here, the same method `add()` behaves differently based on the number of arguments passed.
+
+---
+
+## **🔸 5. Operator Overloading**
+🔹 **Definition:**  
+Python allows us to redefine built-in operators like `+`, `-`, `*`, `==`, etc., for custom objects.  
+
+### **Example of Operator Overloading**
+```python
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):  # Overloading the `+` operator
+        return Point(self.x + other.x, self.y + other.y)
+
+    def __str__(self):  # For better printing of the object
+        return f"({self.x}, {self.y})"
+
+p1 = Point(2, 3)
+p2 = Point(4, 5)
+p3 = p1 + p2  # Calls the __add__ method
+
+print(p3)  # Output: (6, 8)
+```
+🔹 The `+` operator is redefined to **add two objects of `Point` class**.
+
+---
+
+## **🔸 6. Duck Typing (Dynamic Polymorphism)**
+🔹 **Definition:**  
+Python follows the **"If it looks like a duck and quacks like a duck, it must be a duck"** principle.  
+- It means we don’t check the type of an object, but its **behavior**.
+
+### **Example of Duck Typing**
+```python
+class Bird:
+    def fly(self):
+        print("Bird is flying")
+
+class Airplane:
+    def fly(self):
+        print("Airplane is flying")
+
+class Fish:
+    def swim(self):
+        print("Fish is swimming")
+
+# Common function that uses Duck Typing
+def make_it_fly(entity):
+    entity.fly()
+
+# Creating objects
+bird = Bird()
+airplane = Airplane()
+fish = Fish()
+
+make_it_fly(bird)      # Output: Bird is flying
+make_it_fly(airplane)  # Output: Airplane is flying
+# make_it_fly(fish)    # This will cause an AttributeError
+```
+🔹 Here, `make_it_fly()` calls the `fly()` method without caring about the object's class.
+
+---
+
+## **🔹 7. Advanced Concepts in Polymorphism**
+### **A. Using Polymorphism with Inheritance**
+```python
+class Shape:
+    def area(self):
+        pass  # To be implemented by subclasses
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side * self.side
+
+shapes = [Circle(5), Square(4)]
+for shape in shapes:
+    print(shape.area())  # Calls appropriate method
+```
+🔹 The `area()` method behaves differently for `Circle` and `Square`.
+
+---
+
+### **B. Polymorphism with Abstract Classes**
+We can enforce polymorphism using **abstract classes** with the `abc` module.
+
+```python
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def sound(self):
+        pass
+
+class Dog(Animal):
+    def sound(self):
+        return "Bark!"
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow!"
+
+# Creating objects
+animals = [Dog(), Cat()]
+for animal in animals:
+    print(animal.sound())  # Calls the appropriate implementation
+```
+🔹 Here, the `sound()` method is **forced** to be implemented by all subclasses.
+
+---
+
+## **🔹 8. Key Takeaways**
+✅ **Polymorphism** allows methods to be redefined in derived classes.  
+✅ **Method Overriding** is runtime polymorphism where a subclass redefines a method of its superclass.  
+✅ **Method Overloading** is mimicked in Python using default arguments.  
+✅ **Operator Overloading** allows defining custom behavior for built-in operators.  
+✅ **Duck Typing** enables dynamic polymorphism without checking an object's type.  
+✅ **Abstract Classes** enforce polymorphism by requiring subclasses to implement methods.
+
+---
+
+## `File Handling V25.01.31`
+
+### **Complete Guide to File Handling in Python (Beginner to Advanced)**  
+
+Python provides built-in functions to **create, read, write, and manipulate files**. Understanding file handling is crucial for working with data, logs, configurations, and more.
+
+---
+
+## **1️⃣ Basics of File Handling in Python**
+Python uses the built-in `open()` function to interact with files.
+
+### **Syntax:**
+```python
+file = open("filename", "mode")
+```
+- `"filename"` → Name of the file with extension (e.g., `"data.txt"`).
+- `"mode"` → Specifies how the file will be used.
+
+---
+
+## **2️⃣ File Opening Modes**
+| Mode | Description |
+|------|------------|
+| `r`  | Read (default) – Opens a file for reading; error if file does not exist |
+| `w`  | Write – Creates a new file or overwrites an existing file |
+| `a`  | Append – Opens a file for appending; creates a new file if it doesn’t exist |
+| `x`  | Exclusive Creation – Creates a new file; error if file exists |
+| `b`  | Binary mode – Opens file in binary format (e.g., images, PDFs) |
+| `t`  | Text mode (default) – Opens file in text mode |
+
+🔹 **Modes can be combined**:  
+- `"rb"` → Read in binary  
+- `"wt"` → Write in text  
+- `"a+"` → Append and read  
+- `"wb+"` → Write and read in binary  
+
+---
+
+## **3️⃣ Reading Files in Python**
+#### **Method 1: Using `read()`**
+Reads the entire file as a string.
+```python
+file = open("example.txt", "r")
+content = file.read()
+print(content)
+file.close()
+```
+
+#### **Method 2: Using `readline()`**
+Reads one line at a time.
+```python
+file = open("example.txt", "r")
+line = file.readline()
+print(line)
+file.close()
+```
+
+#### **Method 3: Using `readlines()`**
+Reads all lines and returns them as a list.
+```python
+file = open("example.txt", "r")
+lines = file.readlines()
+print(lines)
+file.close()
+```
+
+---
+
+## **4️⃣ Writing Files in Python**
+#### **Method 1: Using `write()`**
+Writes text to a file (overwrites if it exists).
+```python
+file = open("example.txt", "w")
+file.write("Hello, World!\nThis is a new file.")
+file.close()
+```
+
+#### **Method 2: Using `writelines()`**
+Writes multiple lines to a file.
+```python
+lines = ["First Line\n", "Second Line\n", "Third Line\n"]
+file = open("example.txt", "w")
+file.writelines(lines)
+file.close()
+```
+
+---
+
+## **5️⃣ Appending to a File**
+To **add new content** without deleting existing content, use `"a"` mode.
+```python
+file = open("example.txt", "a")
+file.write("\nThis is an appended line.")
+file.close()
+```
+
+---
+
+## **6️⃣ Best Practice: Using `with` Statement (Automatic Closing)**
+The `with` statement ensures the file closes automatically.
+```python
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+# No need to manually call file.close()
+```
+
+---
+
+## **7️⃣ Checking If a File Exists**
+Using the `os` module:
+```python
+import os
+
+if os.path.exists("example.txt"):
+    print("File exists!")
+else:
+    print("File does not exist!")
+```
+
+---
+
+## **8️⃣ Deleting a File**
+Using `os.remove()`:
+```python
+import os
+os.remove("example.txt")
+```
+
+To delete a folder:
+```python
+os.rmdir("folder_name")
+```
+
+---
+
+## **9️⃣ Working with Binary Files (Images, PDFs)**
+### **Reading a Binary File**
+```python
+with open("image.jpg", "rb") as file:
+    data = file.read()
+    print(data[:50])  # Print first 50 bytes
+```
+
+### **Writing to a Binary File**
+```python
+with open("copy.jpg", "wb") as file:
+    file.write(data)
+```
+
+---
+
+## **🔟 Advanced File Handling Techniques**
+### **1. Moving & Renaming Files**
+```python
+import os
+os.rename("old_name.txt", "new_name.txt")
+```
+
+### **2. Copying Files**
+Using `shutil` module:
+```python
+import shutil
+shutil.copy("source.txt", "destination.txt")
+```
+
+### **3. Getting File Metadata**
+```python
+import os
+
+file_info = os.stat("example.txt")
+print(f"Size: {file_info.st_size} bytes")
+print(f"Last modified: {file_info.st_mtime}")
+```
+
+### **4. Reading Large Files Efficiently**
+If a file is too large, read it line by line:
+```python
+with open("large_file.txt", "r") as file:
+    for line in file:
+        print(line, end="")
+```
+
+---
+
+## **🔹 Summary**
+| Concept | Function |
+|---------|----------|
+| Open File | `open("filename", "mode")` |
+| Read File | `read()`, `readline()`, `readlines()` |
+| Write to File | `write()`, `writelines()` |
+| Append to File | `append("data")` |
+| Close File | `file.close()` |
+| Best Practice | `with open(...) as file:` |
+| Check Existence | `os.path.exists("file")` |
+| Delete File | `os.remove("file")` |
+| Work with Binary | `"rb"`, `"wb"` modes |
+| Copy File | `shutil.copy()` |
+| Move/Rename File | `os.rename()` |
+
+---
 
 ## `numpy: V25.02.03`
 - Connect Wifi
