@@ -904,7 +904,7 @@ In multiple inheritance, a class can inherit from more than one base class. This
 |Common Issue|	No ambiguities.|	Possible method resolution conflict (diamond problem).|
 
 
-## `datetime:`
+## `datetime: V25.01.30` 
 - import datetime
 - datetime.datetime.now() : Current Date Time.
 - %a = Sat
@@ -948,9 +948,11 @@ In multiple inheritance, a class can inherit from more than one base class. This
 - Returen Non-Space Charecters : "%S"
 - Return Space and Special Charecters : "%W"
 - Return Charecters : "%w"
-- Return end with Charecters : "%z" 
+- Return end with Charecters : "%z"
 
-## `numpy:`
+## `Polymorphism & File Handling V25.01.31`
+
+## `numpy: V25.02.03`
 - Connect Wifi
 - Open jupyter
 - Pip install numpy : use to Install this Package.
