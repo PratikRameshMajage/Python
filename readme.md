@@ -1380,6 +1380,29 @@ with open("large_file.txt", "r") as file:
 
 ---
 
+## `File Handling`
+- `r: Read Mode:`
+    - It can read file.
+    - File should already exist.
+    - It cannot write the data into the file.
+- `w: Write Mode:`
+    - File Create.
+    - Overwride the existing File.
+    - It can write the data into the file.
+- `a: Append Mode:`
+    - It adds data end of the line.
+    - File should be already in existance.
+    - It allows write function.
+    - It does not create a new file. 
+- `w+: Write and Read Mode:`
+    - It can Create a new file.
+    - It allows reading over action.
+- `a+: append and Read Mode:`
+    - It allows read write and append function.
+    - Symbol is a+.
+    - It can create a file.
+    - But it does not Overwrite. 
+
 ## `numpy: V25.02.03`
 - Connect Wifi
 - Open jupyter
@@ -1498,8 +1521,7 @@ with open("large_file.txt", "r") as file:
         - Iterate string on integer
         - Variable and Object is not collable. eg.,data = "Hello"; print(data());  
 
-
-
+## `Matplotlib V25.02.11`
 
 
 
