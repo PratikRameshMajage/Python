@@ -1433,10 +1433,70 @@ with open("large_file.txt", "r") as file:
     - Search sorted need sort array in ascending order.
     - It is a function which helps to load a new value without disturbing the order. 
 
+## `Polymorphism & Exception Handling:`
 
+### `Polymorphis:` 
+- Polimorphism is Object Oriented Concept.    
+- `poly`: many `morphism`: forms | types
+- Compiletime and Runtime these are not Object oriented concepts. beacouse this concepts present in C language. But Clanguage is not Object oriented language.
+- Types of Polymorphism:
+    - Overloading (Compiletime Polimorphism)
+    - Overriding (Runtime Polimorphism)
+- Method Overloading:
+    - When a single class having many methods with same name but with different parameters is called method Overloading.
+    - Python does not support method overloading directly. However, we can achieve it using default arguments or variable-length arguments` (`*args` and `**kwargs`).
+    - one class | one method (self, defaultParameter1=None, defaultParameter2=None ) | if (defaultParameter1 is not None and defaultParameter2 is not None) return; elif(defaultParameter is not None) return; else return; by using this conditions we can do the method Overloading.  
+- Method Overridding:
+    - When the Parent and the Child class having same Name and same Parameters is called as Method Overriding.
+    - Inheritance is required to achive the Method Overridding.
+    - Super() method use to access and execute imediate parent class method. It also requires Inheritance to access imediate parent class method.
+    - Here we need to create separate object of each class to execute each class method or else we have to use super() method.
+    - Else Method Overridding can only execute last class last method.    
 
+### `Exception Handling:`
+- Error : Syntax error : throw by Compiler : On Compiletime 
+- Exception : Logical Exception : throw by Pvm(Python Virtual Machine) (Byte Code Verification) (Check Binary Code Standards) : on Runtime 
+- We do exception handling on subspecious code beacouse we have to prevent from code termination.  
+- Error occuring at Runtime is called `Exception.`
+- Try and Except black is used to handle Exception.
+- The code is written within the try block.
+- The try block throws exception if occurs.
+- Except block handles the exception and prevent from termination of the code.
+- This block activates only when exception is throw by try block.
+- Every exception is Predefined class in python.
+- Not Necessary to give class name while handling except block.
+- unboxin the list : Storing indivisual element into the indivisual variable.
 
+- `eg., ZeroDivisionError`
+- `Except block executed : When exception throw by try block.`
+- `Else block executed : When Exception not throw by try block.`
+- `Finnaly block executed : Whether Exception throw or not throw by try block.`
 
+- Exception Handling blocks:
+    - try: Throw exception.
+    - except: Handle the exception thrown by try block.
+    - else: Executes when exception not thrown by try block.
+    - finally: Executes whether exception throw or not throw br try block.
+
+- `Exception Handling:`
+    1. `ZeroDivisionError:`  `eg,.96/0`
+    2. `IndexError:`  `List out of bound eg,.a[7], range out of list eg,.(len(a)+2)`
+    3. `NameError:`  `Function Misspelled eg,.(data2()), Not Defined | Undefined Variable eg,.(print(a2))` 
+    4. `keyError:`  `Dictionary eg,.(data[7])`
+    5. `TypeError:` `String and Float Concatination eg,.("Pratik"+7), Iterate String on Integer eg,.(for Pratik in 1234567) pass`
+    6. `ValueError:` `Type Conversion eg,.(name = float("Hello")), Unboxing the List eg,.(p,q,r,s,t = data)` 
+
+- Type of Exceptions:
+    - ZeroDivisionError : Division by 0
+    - IndexError : List index out of bound and range(for loop) is out of bound eg.,(a\[12]->Accepts index position)
+    - KeyError : Dictionary | It occurs when specify non existing key value pair.
+    - NameError : Undefined | Not-defined | When your function name misspelled. or variable is not define and you are using
+    - ValueError : Type conversion and Unboxing the list
+    - TypeError:
+        - Beacouse of Data Types Miss Match
+        - Concatination of string and integer
+        - Iterate string on integer
+        - Variable and Object is not collable. eg.,data = "Hello"; print(data());  
 
 
 
