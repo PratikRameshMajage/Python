@@ -1521,7 +1521,8 @@ with open("large_file.txt", "r") as file:
         - Iterate string on integer
         - Variable and Object is not collable. eg.,data = "Hello"; print(data());  
 
-## `Matplotlib V25.02.11`
+
+
 
 
 
