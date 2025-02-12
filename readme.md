@@ -1521,10 +1521,82 @@ with open("large_file.txt", "r") as file:
         - Iterate string on integer
         - Variable and Object is not collable. eg.,data = "Hello"; print(data());  
 
-
-
-
-
+## `Matplotlib V25.02.11`
+- `pip install matplotlib.`
+- `import matplotlib.pyplot as pt`
+- matplotlib is a Python Library | Package.
+- pyplot is subplot of matplot library.
+- `pip install numpy.`
+- Numpu is numerical python library.
+- Graph x and y axis. Cordinates.
+- x - Horizontal
+- y - Vertical
+- Graph -> plot (x-cordinate, y-cordinate)
+- Matplotlib Library:
+    - It is Graph and Chart oriented Library.
+    - It's sublibrary is pyplot.
+    - It can be use through alises.
+    - plot() function is use plot the Graph.
+    - syntax: pt.plot(x-cordinates, y-cordinates)
+    - It can display grapg with some kind of Notification.
+    - show() function is use to display the Graph.
+    - syntax: pt.show()
+    - X and Y cordinate ctrate using nupy library.
+    - syntax: x = np.array(\[10,20])
+- `Markers:`
+    - Markers heilight the Intersecting Points.
+    - There are various types of Markers.
+    1. `Circle:` `'o'`
+    2. `Star:` `'*'`     
+    3. `Point:` `'.'`     
+    4. `Pixcel:` `','`
+    5. `x-marker:` `'x'`
+    6. `Filled-X:` `'X'`
+    7. `Plus Sign:` `'+'`
+    8. `Filled Plus:` `'P'`
+    9. `Square:` `'s'`
+    10. `Diamond:` `'D'`
+    11. `Thin Diamond:` `'d'`
+    12. `Pentagoan:` `'p'` 5 Sides     
+    13. `Hexagoan:` `'H'` 6 Sides     
+    14. `Small hexagoan:` `'h'`
+    15. `Down Triangle:` `'V'`
+    16. `Up Triangle:` `'^'`
+    17. `Right Triangle:` `'>'`     
+    18. `Left Triangle:` `'<'`     
+    19. `Tri Up:` `'1'`     
+    20. `Tri Down:` `'2'`     
+    21. `Tri Left:` `'3'`     
+    22. `Tri Right:` `'4'`     
+    23. `V line:` `'|'` Bar     
+    24. `H line:` `'-'` Underscore
+- `Default x- axis:`
+    - When only 1 point of a single axis are given then Defult value of x-axis are taken.
+    - Default y-axis is not possible.
+- `Colors: syntax: eg., c='k'`
+    - Total 140-150 colors available.
+    1. `r: red`  
+    2. `g: green`  
+    3. `b: blue`  
+    4. `k: black`  
+    5. `y: yellow`
+    6. `c: cyan`
+    7. `m: maginta`  
+- `Line Style (ls): | Line Format  syntax: eg., ls='*--'`  
+    1. Dashed Line : '*--'
+    2. Double Dashed Line : '*--'
+    3. Dotted Line : '*:'
+    4. Dashed-Dotted Line : '*-.'
+- `Marker Size (ms): syntax: eg., ms'7.8'`  
+- `Marker color (mec): syntax: eg., mec='k'`
+- `Marker Face Color (mfc): syntax: eg., mfc='r'`
+- `linewidth: syntax: eg., linewidth='5.3'`
+- `Grid: It Provide's Symettrical graph as a Background. syntax: eg., pt.grid()`
+- `Axis: syntax: eg., axis='y'`
+- `Title: syntax: eg., pt.title("Python Graph")`
+- `x-Label: syntax: eg., pt.xlabel("x-axis")`
+- `y-Label: syntax: eg., pt.ylabel("y-axis")`
+- `Scatter: syntax: eg., pt.scatter(x,y,marker='*')`
 
 
 
