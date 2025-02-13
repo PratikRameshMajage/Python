@@ -21,7 +21,7 @@
 - `Binery Language` -> Byte Code -> 0 & 1
 - `Constructive Language` - Create a Server - That's why we can use Python in web -> While "constructive language" is not a standard term, it could be used informally to describe Python’s role in building and constructing web applications, as it helps assemble server functionality efficiently.
 - If you're coining a term, you could say "constructive backend language" to emphasize Python’s role in creating server-side architectures.
-- `Scripting Language` -> Use in Hacking 
+- `Scripting Language` -> Use in Hacking | Everything Consider as String.(Numbers) | Input consider as a String. Beacouse python is scripting langiage it is use for web devlopment also. 
 - `Interpriter Language` (Logical Exception) (Run Time Exception) (Bytecode Verification) -> Checks Byte Code Standards.
 - `Compile Language` (Syntactical Error) (Compile Time Error)
 <!-- - MySql -> YACC -> Yet Only Compile Compile -> C++ and MySql Two Compilers  -->
@@ -465,6 +465,20 @@ Info()
     - Follows Camelcase Syntax Structure
     - To Access Class methods or Variables we need to create class Object means Refrence Variable of calss.
     - Syntax: class Data:
+
+
+- `Relation between Object and Class:`
+    - `Object is an instance of Class`
+    - `Constructor: Use to Intialize the Object.`
+    - `Object allocates memory by intiallizing class Constructor`
+    - `Object defines the Behaviour of Class`
+    - `class is the container of Data members and Method functions.`
+    - `class is a Blueprint`
+    - `More than one constructor allow in python with diffrent parameters.`
+    - `def keyword use to define Constructor.`
+    - `By using __init__(self) we create Constructor.`
+    - `self parameter is mendatory for constructor and methods.`
+    - `Constructor does not require object`
 
 - `Methods and Functions:`
     - `Methods:`
@@ -1599,10 +1613,55 @@ with open("large_file.txt", "r") as file:
 - `y-Label: syntax: eg., pt.ylabel("y-axis")`
 - `Scatter: syntax: eg., pt.scatter(x,y,marker='*')`
 
+## `Matplotlib Library V25.02.13`
+- `subplot:`
+    - syntax: pt.subplot(row,cloumn,position)
+    - 1'st plot the graph and the all done! then show() on screen
+    - pt.title("Graph-1")
+    - pt.tight_layout()
+    - pt.suptitle("Sub-Plot")
+- `Bar:`
+    - Separate bar's for each points.
+    - By default bar width and height is 0.8.
+    - bar: width
+    - barh: height
+    - color="red"
+    - Histogram: Bars are joint toeach other. mosty use standerd Deviation
+- `Pie:`
+    - Circular graphs
+    - Single array is use to display pie graph. 
+    - Anticlockwise
+    - At Center = 0 degree
+    - position = Specific value / Total Summation of all values
+    - blue, orange, green, red Default Colors.
+    - labels=users (users is array)
+    - explode=ex (ex is array)
+    - shadow=True
+    - startangle=90
+    - colors=colors (colors is array)
 
+## `Pandas Library:`
+- `pandas:`
+    - pip install pandas
+    - import pandas as pd
+    - mostly support csv files
+    - DataFrames (Return 1st and last 5 record's)
+    - pd.read_csv("C:/Users/majag/Desktop/data.csv")
+    - view.to_string() (reeturn all data)
+    - view.info() (Return file information)
+    - plot() (Return line gragh)
 
-
-
+## `Math Library`
+- `Math:`
+    - math.pi()
+    - math.e()
+    - math.sqrt()
+    - math.isqrt() (Return Base Integer Value)
+    - math.fabs() (Return Absolute Value, Returning Positive value)
+    - math.ceil(34.9) (35)
+    - math.ceil(-34.9) (-35)
+    - math.floor(34.9) (34)
+    - math.floor(-34.9) (-34)
 
 
 
