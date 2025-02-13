@@ -15,7 +15,7 @@
 - Python 1.0 - 1994
 - Python 2.0 - 2000 Depricate in 2020
 - Python 3.0 - 2008 New and It has lot of Features & Library Supports.
-- `PVM` - Python Vertual Machine witten in Assembly language Which use Machine Level Language and convert it into binary language. Do's (Byte Code Verification)
+- `PVM` - Python Vertual Machine witten in Assembly language Which use Machine Level Language and convert it into binary language. Do's (Byte Code Verification) Throw Exception when byte code standard's not match.
 - `High Level Language` (HLL) -> Python, English
 - `Low Level Language` (LLL) -> Machine Level Language, Assembly Language-> Registers, Ic's
 - `Binery Language` -> Byte Code -> 0 & 1
@@ -37,7 +37,7 @@
 - `Integrated Devlopment Environment:` & `Debugger`
     - Here No Need to Create New File
         - `Jupiter` -> Open Source -> .ipynb -> i : Interactive, py : Python, nb : Notebook.
-        - `Python CLI IDLE` (File will Not Be Save) REPL (Read Evaluate Print Loop) Prompt in Windows Shell in Mac
+        - `Python CLI IDLE` (File will Not Be Save) REPL (Read Evaluate Print Loop) Prompt in Windows, & Shell in Mac
     - Here Need to Create New File
         - `VS Code` -> Microsoft and it is Open Source to Buid Yourself.
         - `Pycharm` -> JetBrains
@@ -46,13 +46,13 @@
     - Permutation and Combination
     - Probability
     - Statistics
-    - `Numpy` - Data Manuplation -> Heavy Focus on Arrays
-    - `Pandas` - Data Operations
-    - `Matplotlib` - Data Visualisation -> Graphs, Ven Diagrams
+    - `Numpy` - Data Manuplation -> Heavy Focus on Arrays, Nunmerical python.
+    - `Pandas` - Data Operations.
+    - `Matplotlib` - Data Visualisation -> Graphs, , Charts, Ven Diagrams.
 - `print` -> Returns Each Charecter on Console Screen. Except escape charecters like (/n). 
     - Double Coatation & Single Coatation.
     - print("'Pratik\'s Birthaday'")
-    - \' (Back Slash) Ignores Special Charecter. eg: print('partik\'s "laptop"')
+    - ( \ Back Slash) Ignores Special Charecter. eg: print('partik\'s "laptop"')
 - `type` -> Returns Data Type of Data on the console screen. 
 - Companie Work on Python: `Infosis python 20%`, java 40%, deops 40%.
 - Difference Between `Function` and `Method` -> Block of Code which Executes Targeted Logic called Normal Function. And Function Use in Class called Method. 
@@ -66,6 +66,7 @@
 - ByDefault Input Value Accepts String. Beacouse All programing Languages are Scripting languages.  
 - Type Conversion : int(input()) float(input()) complex(input())
 - Every Data Type in python is Class. we are using there Objects eg:< class int >
+- Eveery Exception in python is class. 
 - In Python, everything is an object, and every object is an instance of a class. So, when you use the type() function on an object, it returns the type of the object, which is the class to which it belongs.
 ```python
 x = 42
@@ -274,7 +275,7 @@ print(type(x))  # Output: <class 'int'>
 
 - `Bitwise Operators:`
     - It Returns Boolean Value on the Console Screen.
-    - `Binary Concersion :` `| 32 | 16 | 8 | 4  | 2 | 1 |`  
+    - `Binary Concersion :` `| 32 | 16 | 8 | 4  | 2 | 1 |` = `2^5|2^4|2^3|2^2|2^1|2^0`
     - `Bin() Function` use to Convert an `Integer value` to `Binary Value` also use to `Identity of a binary value.`
     - `0b` : is use an identifier for Binary Value `Identity.`  
     - Addition of `1+1` Bitwise Operator is `10` where 1 is Carry and 0 is Remainder.
