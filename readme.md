@@ -476,7 +476,7 @@ Info()
     - `class is a Blueprint`
     - `More than one constructor allow in python with diffrent parameters.`
     - `def keyword use to define Constructor.`
-    - `By using __init__(self) we create Constructor.`
+    - `By using def __init__(self) we create Constructor.`
     - `self parameter is mendatory for constructor and methods.`
     - `Constructor does not require object`
 
@@ -498,7 +498,7 @@ Info()
         - Constructor allocates memory to class when object is Created.
         - By default Call when Object is Creted. (Memory is allocated)
         - Data() -> Class Constructor. this is how you call a Constructor.
-        - Does Not Require Refrence Variable.
+        - Not Require Refrence Variable (Object).
 
 - `Object:`
     - By Using Class Constructor It Creates a Memory for Calss is known as Object.
@@ -516,6 +516,9 @@ Info()
     - Self is use to Call the Current Object Method.
     - Within Class we can call multiple Method from inside the another method.
     - It make's Processor to jump easily within the calss one method to another method.
+    - jump from 1 method to another method - self keyword. syntax: self.data()
+    - jump from 1 class method to another imediate parent class method use super keyword. - super() keyword. syntax: super().data()
+
 
 - `Instance Variable:`
     - A Varible within the Calss and outside the Methods called Instance Variable.
@@ -588,7 +591,7 @@ Info()
         - Function is Anonymous.
         - No use of def keyword.
         - Always Parametrise and returning function.
-        - use for simple logic.
+        - Use for simple logic.
         - Usecase - OneLine Function.
     - `Method:`
         - Function Should have Name.
