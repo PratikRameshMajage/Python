@@ -863,7 +863,7 @@ Info()
 - By default Constructor call in python when object is created.
 - Two Types Calling:
 - Child() -> by Default -> Implicit 
-- obj.Child() -> By Own Hand -> Explicit
+- obj.= Child() -> By Own Hand -> Explicit
 - Constructor creates Object(Memory) by default.
 - By default Object created Constructor Implictly.
 - mro() -> Method Resolution Order. It is nothing but scequence of properties in Inheritance. -> Proritywise.
@@ -923,50 +923,50 @@ In multiple inheritance, a class can inherit from more than one base class. This
 
 
 ## `datetime: V25.01.30` 
-- import datetime
-- datetime.datetime.now() : Current Date Time.
-- %a = Sat
-- %A = Saturday
-- %d = 08
-- %D = 02/08/25
-- %b = Feb
-- %B = February
-- %y = 25
-- %Y = 2025
-- %H = Hours
-- %M = Minutes
-- %S = Secondes
-- %f = Microseconds
-- %x = Data
-- %X = Time
-- %p = PM|AM
-- %I = 12 Hour's Format
-- %w = 6
-- %W = 05
-- %V = scequence of weeks Monday | Sunday
-- %c = Sat Feb  8 22\:22:57 2025
+- `import datetime`
+- `datetime.datetime.now()` : Current Date Time.
+- `%a` = Sat
+- `%A` = Saturday
+- `%d` = 08
+- `%D` = 02/08/25
+- `%b` = Feb
+- `%B` = February
+- `%y` = 25
+- `%Y` = 2025
+- `%H` = Hours
+- `%M` = Minutes
+- `%S` = Secondes
+- `%f` = Microseconds
+- `%x` = Data
+- `%X` = Time
+- `%p` = PM|AM
+- `%I` = 12 Hour's Format
+- `%w` = 6
+- `%W` = 05
+- `%V` = scequence of weeks Monday | Sunday
+- `%c` = Sat Feb  8 22\:22:57 2025
 
 ## `Meta Charecters: (Regular Expressions)( search (Search in given data), findall (Find), sub (Replace), split (split according to Charecter or Space))` `Return Boolean Value`
-- Start : ^
-- end : $
-- Remaining Charecters : .*
-- No of Charecters : .
-- Specific no of Charecters : {3}
+- Start : `^`
+- end : `$``
+- Remaining Charecters : `.*`
+- No of Charecters : `.`
+- Specific no of Charecters : `{3}`
 - Or : |
-- 0 or 1 Charecter : .?
-- 1 or More Charecters : .+ 
+- 0 or 1 Charecter : `.?`
+- 1 or More Charecters : `.+` 
 
 ## `Specical Charecters:` `Returns Boolean Value` 
-- Start Charecter : "\APratik"
-- End Charecter : r"Pratik\b"
-- End Charecter : r"\BPratik"
-- Digit Value Match : "\d"
-- Non-Digit Value Match : "\D"
-- Return Space Value : "%s"
-- Returen Non-Space Charecters : "%S"
-- Return Space and Special Charecters : "%W"
-- Return Charecters : "%w"
-- Return end with Charecters : "%z"
+- Start Charecter : `"\APratik"`
+- End Charecter : `r"Pratik\b"`
+- End Charecter : `r"\BPratik"`
+- Digit Value Match : `"\d"`
+- Non-Digit Value Match : `"\D"`
+- Return Space Value : `"%s"`
+- Returen Non-Space Charecters : `"%S"`
+- Return Space and Special Charecters : `"%W"`
+- Return Charecters : `"%w"`
+- Return end with Charecters : `"%z"`
 
 
 ## `Polymorphism V25.01.31`
@@ -1165,7 +1165,7 @@ We can enforce polymorphism using **abstract classes** with the `abc` module.
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
-    @abstractmethod
+    @abstractmethod # Decoretors
     def sound(self):
         pass
 
